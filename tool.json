@@ -1,0 +1,309 @@
+{
+  "tool": {
+    "id": "ibutg",
+    "title": "IBUTG e limite de exposição ao calor (NR-15)",
+    "short": "Índice de bulbo úmido termômetro de globo",
+    "spec": [
+      "medicina-do-trabalho"
+    ],
+    "tier": 1,
+    "desc": "Calcule o IBUTG e compare com o limite de exposição e o nível de ação ao calor para a taxa metabólica, pelo Anexo 3 da NR-15 e pelo Anexo 3 da NR-9.",
+    "lead": "Avalia a sobrecarga térmica de uma atividade pelo IBUTG e compara com o limite de exposição ocupacional (insalubridade) e o nível de ação das normas regulamentadoras.",
+    "fields": [
+      [
+        "amb",
+        "Local da atividade",
+        "radio",
+        {
+          "opts": {
+            "fechado": "Ambiente fechado ou com fonte artificial de calor",
+            "aberto": "Céu aberto, sem fonte artificial de calor"
+          }
+        }
+      ],
+      [
+        "solar",
+        "Há carga solar direta no ponto de medição?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "tbn",
+        "Temperatura de bulbo úmido natural (tbn)",
+        "num",
+        {
+          "min": 0,
+          "max": 45,
+          "step": 0.1,
+          "unit": "°C",
+          "ph": "25"
+        }
+      ],
+      [
+        "tg",
+        "Temperatura de globo (tg)",
+        "num",
+        {
+          "min": 0,
+          "max": 90,
+          "step": 0.1,
+          "unit": "°C",
+          "ph": "40"
+        }
+      ],
+      [
+        "tbs",
+        "Temperatura de bulbo seco (tbs), só com carga solar",
+        "num",
+        {
+          "min": 0,
+          "max": 60,
+          "step": 0.1,
+          "unit": "°C",
+          "opt": true
+        }
+      ],
+      [
+        "m",
+        "Taxa metabólica média da atividade (Quadro 2 da NR-15)",
+        "num",
+        {
+          "min": 100,
+          "max": 606,
+          "step": 1,
+          "unit": "W",
+          "ph": "300"
+        }
+      ],
+      [
+        "roupa",
+        "Vestimenta",
+        "sel",
+        {
+          "opts": {
+            "0": "Uniforme (calça e camisa de manga longa) ou macacão de tecido: +0",
+            "2": "Macacão de poliolefina: +2 °C",
+            "3": "Vestimenta ou macacão forrado (tecido duplo): +3 °C",
+            "4": "Avental longo de manga longa impermeável ao vapor: +4 °C",
+            "10": "Macacão impermeável ao vapor: +10 °C",
+            "12": "Macacão impermeável ao vapor sobre a roupa de trabalho: +12 °C",
+            "0.5": "Macacão de polipropileno SMS: +0,5 °C"
+          }
+        }
+      ],
+      [
+        "capuz",
+        "Vestimenta com capuz (+1 °C)",
+        "chk",
+        {
+          "pts": 0
+        }
+      ]
+    ],
+    "formula": "<p>Sem carga solar: <strong>IBUTG = 0,7 tbn + 0,3 tg</strong>. Com carga solar: <strong>IBUTG = 0,7 tbn + 0,1 tbs + 0,2 tg</strong> (NHO 06 da Fundacentro).</p><p>Ao IBUTG soma-se o ajuste da vestimenta (Quadro 4 do Anexo 3 da NR-9; capuz +1 °C). O resultado é comparado com o IBUTG máximo do Quadro 1 do Anexo 3 da NR-15 (limite de exposição) e com o Quadro 1 do Anexo 3 da NR-9 (nível de ação), na linha da maior taxa metabólica tabelada que não ultrapassa a informada.</p>",
+    "table": [
+      [
+        "Taxa metabólica (W)",
+        "Limite de exposição (IBUTG máx.)",
+        "Nível de ação"
+      ],
+      [
+        "100",
+        "33,7 °C",
+        "31,7 °C"
+      ],
+      [
+        "150",
+        "31,7 °C",
+        "29,2 °C"
+      ],
+      [
+        "200",
+        "30,3 °C",
+        "27,5 °C"
+      ],
+      [
+        "300",
+        "28,2 °C",
+        "25,0 °C"
+      ],
+      [
+        "414",
+        "26,6 °C",
+        "23,0 °C"
+      ],
+      [
+        "606",
+        "24,7 °C",
+        "20,7 °C"
+      ]
+    ],
+    "table_note": "Trechos dos quadros oficiais (a calculadora usa as tabelas completas). Exemplos de taxa metabólica do Quadro 2 da NR-15: sentado em repouso 100 W; em pé, trabalho leve com as mãos 153 W; andando no plano a 4 km/h sem carga 297 W; trabalho moderado de braços (varrer) 320 W; remoção com pá ou abertura de valas 524 W.",
+    "tips": [
+      "Pela Portaria SEPRT nº 1.359/2019, a <strong>insalubridade</strong> por calor (grau médio) só se caracteriza em ambiente fechado ou com fonte artificial de calor; o Anexo 3 da NR-15 não se aplica a atividades a céu aberto sem fonte artificial. As medidas preventivas e corretivas da NR-9 valem nos dois casos.",
+      "A avaliação legal usa o <strong>IBUTG médio e a taxa metabólica média</strong> da janela de 60 minutos corridos mais crítica da jornada, medidos conforme a NHO 06: uma leitura isolada é só uma triagem.",
+      "A antiga tabela de \"regime de trabalho intermitente com descanso\" (leve, moderado, pesado) foi substituída em 2019 pelos quadros por taxa metabólica: não use mais os limites antigos de 30,0 / 26,7 / 25,0 °C.",
+      "Os limites valem para trabalhadores <strong>aclimatizados</strong> e aptos em avaliação médica. Acima do nível de ação, o PCMSO deve prever a aclimatização; acima do limite, exames e monitoramento fisiológico.",
+      "Vestimentas impermeáveis ao vapor (EPIs químicos) somam até 12 °C ao IBUTG: nessas situações, o risco de hipertermia é alto mesmo em ambiente ameno."
+    ],
+    "sources": [
+      [
+        "Brasil. Ministério do Trabalho e Emprego. Norma Regulamentadora nº 15 (NR-15): Atividades e Operações Insalubres, com o Anexo 3 alterado pela Portaria SEPRT nº 1.359/2019.",
+        "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15"
+      ],
+      [
+        "Brasil. Ministério do Trabalho e Emprego. Norma Regulamentadora nº 9 (NR-9): Avaliação e controle das exposições ocupacionais a agentes físicos, químicos e biológicos, Anexo 3 (Calor).",
+        "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-9-nr-9"
+      ]
+    ],
+    "cases": [
+      [
+        "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        {
+          "amb": "fechado",
+          "solar": "0",
+          "tbn": 25,
+          "tg": 40,
+          "m": 300,
+          "roupa": "0"
+        },
+        {
+          "raw": {
+            "ibutg": 29.5,
+            "lim": 28.2,
+            "acao": 25
+          },
+          "level": "high",
+          "verdict": "insalubre"
+        }
+      ],
+      [
+        "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        {
+          "amb": "fechado",
+          "solar": "0",
+          "tbn": 22,
+          "tg": 30,
+          "m": 200,
+          "roupa": "0"
+        },
+        {
+          "raw": {
+            "ibutg": 24.4,
+            "lim": 30.3,
+            "acao": 27.5
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        {
+          "amb": "fechado",
+          "solar": "0",
+          "tbn": 25,
+          "tg": 32,
+          "m": 250,
+          "roupa": "0"
+        },
+        {
+          "raw": {
+            "ibutg": 27.1,
+            "lim": 29.2,
+            "acao": 26.1
+          },
+          "level": "mid"
+        }
+      ],
+      [
+        "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        {
+          "amb": "aberto",
+          "solar": "1",
+          "tbn": 25,
+          "tbs": 32,
+          "tg": 45,
+          "m": 360,
+          "roupa": "0"
+        },
+        {
+          "raw": {
+            "ibutg": 29.7,
+            "lim": 27.3
+          },
+          "level": "high",
+          "verdict": "não se aplica"
+        }
+      ],
+      [
+        "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        {
+          "amb": "fechado",
+          "solar": "0",
+          "tbn": 22,
+          "tg": 30,
+          "m": 200,
+          "roupa": "10"
+        },
+        {
+          "raw": {
+            "ibutg": 34.4,
+            "base": 24.4
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Carga solar sem tbs: erro",
+        {
+          "amb": "aberto",
+          "solar": "1",
+          "tbn": 25,
+          "tg": 45,
+          "m": 300,
+          "roupa": "0"
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "saude-coletiva",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "saude-coletiva",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/saude-coletiva.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 6,
+      "passed": 6,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/saude-coletiva.php",
+    "sha256": "5f081943f8faff99f4a6ac07fc16af6d7f8e6aa64d874af2d00ed8bae97da6a2",
+    "bytes": 77577
+  },
+  "clinicalValidation": "not-performed"
+}

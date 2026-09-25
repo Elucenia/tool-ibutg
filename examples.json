@@ -1,0 +1,167 @@
+[
+  {
+    "label": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0"
+    },
+    "expected": {
+      "raw": {
+        "ibutg": 29.5,
+        "lim": 28.2,
+        "acao": 25
+      },
+      "level": "high",
+      "verdict": "insalubre"
+    },
+    "originalInput": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 22,
+      "tg": 30,
+      "m": 200,
+      "roupa": "0"
+    },
+    "expected": {
+      "raw": {
+        "ibutg": 24.4,
+        "lim": 30.3,
+        "acao": 27.5
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 22,
+      "tg": 30,
+      "m": 200,
+      "roupa": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 32,
+      "m": 250,
+      "roupa": "0"
+    },
+    "expected": {
+      "raw": {
+        "ibutg": 27.1,
+        "lim": 29.2,
+        "acao": 26.1
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 32,
+      "m": 250,
+      "roupa": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+    "input": {
+      "amb": "aberto",
+      "solar": "1",
+      "tbn": 25,
+      "tbs": 32,
+      "tg": 45,
+      "m": 360,
+      "roupa": "0"
+    },
+    "expected": {
+      "raw": {
+        "ibutg": 29.7,
+        "lim": 27.3
+      },
+      "level": "high",
+      "verdict": "não se aplica"
+    },
+    "originalInput": {
+      "amb": "aberto",
+      "solar": "1",
+      "tbn": 25,
+      "tbs": 32,
+      "tg": 45,
+      "m": 360,
+      "roupa": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 22,
+      "tg": 30,
+      "m": 200,
+      "roupa": "10"
+    },
+    "expected": {
+      "raw": {
+        "ibutg": 34.4,
+        "base": 24.4
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 22,
+      "tg": 30,
+      "m": 200,
+      "roupa": "10"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Carga solar sem tbs: erro",
+    "input": {
+      "amb": "aberto",
+      "solar": "1",
+      "tbn": 25,
+      "tg": 45,
+      "m": 300,
+      "roupa": "0"
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "amb": "aberto",
+      "solar": "1",
+      "tbn": 25,
+      "tg": 45,
+      "m": 300,
+      "roupa": "0"
+    },
+    "expandedZeroOptions": []
+  }
+]
