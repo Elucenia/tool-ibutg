@@ -1,11 +1,11 @@
-/* tool-ibutg · Elucenia · https://github.com/Elucenia/tool-ibutg
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-ibutg · ELUCENIA · https://github.com/Elucenia/tool-ibutg
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"ibutg","title":"IBUTG e limite de exposição ao calor (NR-15)","fields":[["amb","Local da atividade","radio",{"opts":{"fechado":"Ambiente fechado ou com fonte artificial de calor","aberto":"Céu aberto, sem fonte artificial de calor"}}],["solar","Há carga solar direta no ponto de medição?","radio",{"opts":{"0":"Não","1":"Sim"}}],["tbn","Temperatura de bulbo úmido natural (tbn)","num",{"min":0,"max":45,"step":0.1,"unit":"°C","ph":"25"}],["tg","Temperatura de globo (tg)","num",{"min":0,"max":90,"step":0.1,"unit":"°C","ph":"40"}],["tbs","Temperatura de bulbo seco (tbs), só com carga solar","num",{"min":0,"max":60,"step":0.1,"unit":"°C","opt":true}],["m","Taxa metabólica média da atividade (Quadro 2 da NR-15)","num",{"min":100,"max":606,"step":1,"unit":"W","ph":"300"}],["roupa","Vestimenta","sel",{"opts":{"0":"Uniforme (calça e camisa de manga longa) ou macacão de tecido: +0","2":"Macacão de poliolefina: +2 °C","3":"Vestimenta ou macacão forrado (tecido duplo): +3 °C","4":"Avental longo de manga longa impermeável ao vapor: +4 °C","10":"Macacão impermeável ao vapor: +10 °C","12":"Macacão impermeável ao vapor sobre a roupa de trabalho: +12 °C","0.5":"Macacão de polipropileno SMS: +0,5 °C"}}],["capuz","Vestimenta com capuz (+1 °C)","chk",{"pts":0}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
