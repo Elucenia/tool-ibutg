@@ -1,0 +1,1462 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "ibutg",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/ibutg/calculator.js",
+    "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2",
+    "bytes": 7999
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 6,
+    "replayed": 6,
+    "passed": 6,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "ibutg",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+      "originalInput": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 25,
+        "tg": 40,
+        "m": 300,
+        "roupa": "0"
+      },
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 25,
+        "tg": 40,
+        "m": 300,
+        "roupa": "0",
+        "capuz": false
+      },
+      "amendments": [
+        {
+          "field": "capuz",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "ibutg": 29.5,
+          "lim": 28.2,
+          "acao": 25
+        },
+        "level": "high",
+        "verdict": "insalubre"
+      },
+      "recordedResult": {
+        "main": [
+          "29,5",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 29.5,
+          "base": 29.5,
+          "lim": 28.2,
+          "acao": 25
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "amb": "fechado",
+            "solar": "0",
+            "tbn": 25,
+            "tg": 40,
+            "m": 300,
+            "roupa": "0",
+            "capuz": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+          "startedAt": "2026-10-05T17:38:29.573Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "ibutg",
+              "main": [
+                "29,5",
+                "°C"
+              ],
+              "label": "IBUTG",
+              "raw": {
+                "ibutg": 29.5,
+                "base": 29.5,
+                "lim": 28.2,
+                "acao": 25
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "3853b038010dfac301b89c5390d178ca1d48d28b8b37a5d449e91778b72d69c4",
+          "bytes": 154,
+          "elapsedMs": 5.92259999999078
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "startedAt": "2026-10-05T17:38:29.573Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "ibutg",
+            "main": [
+              "29,5",
+              "°C"
+            ],
+            "label": "IBUTG",
+            "raw": {
+              "ibutg": 29.5,
+              "base": 29.5,
+              "lim": 28.2,
+              "acao": 25
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "3853b038010dfac301b89c5390d178ca1d48d28b8b37a5d449e91778b72d69c4",
+        "bytes": 154,
+        "elapsedMs": 5.92259999999078
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibutg",
+            "expected": 29.5,
+            "obtained": 29.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lim",
+            "expected": 28.2,
+            "obtained": 28.2,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.acao",
+            "expected": 25,
+            "obtained": 25,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibutg",
+            "expected": 29.5,
+            "obtained": 29.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.base",
+            "expected": 29.5,
+            "obtained": 29.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lim",
+            "expected": 28.2,
+            "obtained": 28.2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.acao",
+            "expected": 25,
+            "obtained": 25,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "29,5",
+            "obtained": "29,5",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "°C",
+            "obtained": "°C",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "ibutg",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+      "originalInput": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 22,
+        "tg": 30,
+        "m": 200,
+        "roupa": "0"
+      },
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 22,
+        "tg": 30,
+        "m": 200,
+        "roupa": "0",
+        "capuz": false
+      },
+      "amendments": [
+        {
+          "field": "capuz",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "ibutg": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "24,4",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 24.4,
+          "base": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "amb": "fechado",
+            "solar": "0",
+            "tbn": 22,
+            "tg": 30,
+            "m": 200,
+            "roupa": "0",
+            "capuz": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+          "startedAt": "2026-10-05T17:38:29.885Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "ibutg",
+              "main": [
+                "24,4",
+                "°C"
+              ],
+              "label": "IBUTG",
+              "raw": {
+                "ibutg": 24.4,
+                "base": 24.4,
+                "lim": 30.3,
+                "acao": 27.5
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "04a846b09a2a38e2d47219cc428e86f14cdbbb1d784e4b498fcc4f2caff2be38",
+          "bytes": 156,
+          "elapsedMs": 3.667300000000978
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "startedAt": "2026-10-05T17:38:29.885Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "ibutg",
+            "main": [
+              "24,4",
+              "°C"
+            ],
+            "label": "IBUTG",
+            "raw": {
+              "ibutg": 24.4,
+              "base": 24.4,
+              "lim": 30.3,
+              "acao": 27.5
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "04a846b09a2a38e2d47219cc428e86f14cdbbb1d784e4b498fcc4f2caff2be38",
+        "bytes": 156,
+        "elapsedMs": 3.667300000000978
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibutg",
+            "expected": 24.4,
+            "obtained": 24.4,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lim",
+            "expected": 30.3,
+            "obtained": 30.3,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.acao",
+            "expected": 27.5,
+            "obtained": 27.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibutg",
+            "expected": 24.4,
+            "obtained": 24.4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.base",
+            "expected": 24.4,
+            "obtained": 24.4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lim",
+            "expected": 30.3,
+            "obtained": 30.3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.acao",
+            "expected": 27.5,
+            "obtained": 27.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "24,4",
+            "obtained": "24,4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "°C",
+            "obtained": "°C",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "ibutg",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+      "originalInput": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 25,
+        "tg": 32,
+        "m": 250,
+        "roupa": "0"
+      },
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 25,
+        "tg": 32,
+        "m": 250,
+        "roupa": "0",
+        "capuz": false
+      },
+      "amendments": [
+        {
+          "field": "capuz",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "ibutg": 27.1,
+          "lim": 29.2,
+          "acao": 26.1
+        },
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "27,1",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 27.1,
+          "base": 27.1,
+          "lim": 29.2,
+          "acao": 26.1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "amb": "fechado",
+            "solar": "0",
+            "tbn": 25,
+            "tg": 32,
+            "m": 250,
+            "roupa": "0",
+            "capuz": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+          "startedAt": "2026-10-05T17:38:30.200Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "ibutg",
+              "main": [
+                "27,1",
+                "°C"
+              ],
+              "label": "IBUTG",
+              "raw": {
+                "ibutg": 27.1,
+                "base": 27.1,
+                "lim": 29.2,
+                "acao": 26.1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "c23605473be2637e92bac2d3cb35c6d5f77f4313e46e87fd9f5646987aa69253",
+          "bytes": 156,
+          "elapsedMs": 2.675199999997858
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "startedAt": "2026-10-05T17:38:30.200Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "ibutg",
+            "main": [
+              "27,1",
+              "°C"
+            ],
+            "label": "IBUTG",
+            "raw": {
+              "ibutg": 27.1,
+              "base": 27.1,
+              "lim": 29.2,
+              "acao": 26.1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "c23605473be2637e92bac2d3cb35c6d5f77f4313e46e87fd9f5646987aa69253",
+        "bytes": 156,
+        "elapsedMs": 2.675199999997858
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibutg",
+            "expected": 27.1,
+            "obtained": 27.1,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lim",
+            "expected": 29.2,
+            "obtained": 29.2,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.acao",
+            "expected": 26.1,
+            "obtained": 26.1,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibutg",
+            "expected": 27.1,
+            "obtained": 27.1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.base",
+            "expected": 27.1,
+            "obtained": 27.1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lim",
+            "expected": 29.2,
+            "obtained": 29.2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.acao",
+            "expected": 26.1,
+            "obtained": 26.1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "27,1",
+            "obtained": "27,1",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "°C",
+            "obtained": "°C",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "ibutg",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+      "originalInput": {
+        "amb": "aberto",
+        "solar": "1",
+        "tbn": 25,
+        "tbs": 32,
+        "tg": 45,
+        "m": 360,
+        "roupa": "0"
+      },
+      "input": {
+        "amb": "aberto",
+        "solar": "1",
+        "tbn": 25,
+        "tbs": 32,
+        "tg": 45,
+        "m": 360,
+        "roupa": "0",
+        "capuz": false
+      },
+      "amendments": [
+        {
+          "field": "capuz",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "ibutg": 29.7,
+          "lim": 27.3
+        },
+        "level": "high",
+        "verdict": "não se aplica"
+      },
+      "recordedResult": {
+        "main": [
+          "29,7",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 29.7,
+          "base": 29.7,
+          "lim": 27.3,
+          "acao": 23.9
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "amb": "aberto",
+            "solar": "1",
+            "tbn": 25,
+            "tbs": 32,
+            "tg": 45,
+            "m": 360,
+            "roupa": "0",
+            "capuz": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+          "startedAt": "2026-10-05T17:38:30.513Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "ibutg",
+              "main": [
+                "29,7",
+                "°C"
+              ],
+              "label": "IBUTG",
+              "raw": {
+                "ibutg": 29.7,
+                "base": 29.7,
+                "lim": 27.3,
+                "acao": 23.9
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "3ec3f83fc86ae5ddd87fec164979a13b8347d81c19510e03d64b8ddddf661bb6",
+          "bytes": 156,
+          "elapsedMs": 4.097300000023097
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "startedAt": "2026-10-05T17:38:30.513Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "ibutg",
+            "main": [
+              "29,7",
+              "°C"
+            ],
+            "label": "IBUTG",
+            "raw": {
+              "ibutg": 29.7,
+              "base": 29.7,
+              "lim": 27.3,
+              "acao": 23.9
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "3ec3f83fc86ae5ddd87fec164979a13b8347d81c19510e03d64b8ddddf661bb6",
+        "bytes": 156,
+        "elapsedMs": 4.097300000023097
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibutg",
+            "expected": 29.7,
+            "obtained": 29.7,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.lim",
+            "expected": 27.3,
+            "obtained": 27.3,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibutg",
+            "expected": 29.7,
+            "obtained": 29.7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.base",
+            "expected": 29.7,
+            "obtained": 29.7,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lim",
+            "expected": 27.3,
+            "obtained": 27.3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.acao",
+            "expected": 23.9,
+            "obtained": 23.9,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "29,7",
+            "obtained": "29,7",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "°C",
+            "obtained": "°C",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "ibutg",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+      "originalInput": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 22,
+        "tg": 30,
+        "m": 200,
+        "roupa": "10"
+      },
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 22,
+        "tg": 30,
+        "m": 200,
+        "roupa": "10",
+        "capuz": false
+      },
+      "amendments": [
+        {
+          "field": "capuz",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "raw": {
+          "ibutg": 34.4,
+          "base": 24.4
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "34,4",
+          "°C"
+        ],
+        "label": "IBUTG ajustado pela vestimenta",
+        "raw": {
+          "ibutg": 34.4,
+          "base": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "amb": "fechado",
+            "solar": "0",
+            "tbn": 22,
+            "tg": 30,
+            "m": 200,
+            "roupa": "10",
+            "capuz": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+          "startedAt": "2026-10-05T17:38:30.826Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "ibutg",
+              "main": [
+                "34,4",
+                "°C"
+              ],
+              "label": "IBUTG ajustado pela vestimenta",
+              "raw": {
+                "ibutg": 34.4,
+                "base": 24.4,
+                "lim": 30.3,
+                "acao": 27.5
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "d9239e216ab063fa33562bb1cd45e45be2cce5edff4a56fc2061dff0fd2da33d",
+          "bytes": 181,
+          "elapsedMs": 7.175700000021607
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "startedAt": "2026-10-05T17:38:30.826Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "ibutg",
+            "main": [
+              "34,4",
+              "°C"
+            ],
+            "label": "IBUTG ajustado pela vestimenta",
+            "raw": {
+              "ibutg": 34.4,
+              "base": 24.4,
+              "lim": 30.3,
+              "acao": 27.5
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "d9239e216ab063fa33562bb1cd45e45be2cce5edff4a56fc2061dff0fd2da33d",
+        "bytes": 181,
+        "elapsedMs": 7.175700000021607
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ibutg",
+            "expected": 34.4,
+            "obtained": 34.4,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.base",
+            "expected": 24.4,
+            "obtained": 24.4,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ibutg",
+            "expected": 34.4,
+            "obtained": 34.4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.base",
+            "expected": 24.4,
+            "obtained": 24.4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.lim",
+            "expected": 30.3,
+            "obtained": 30.3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.acao",
+            "expected": 27.5,
+            "obtained": 27.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "34,4",
+            "obtained": "34,4",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "°C",
+            "obtained": "°C",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "ibutg",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "Carga solar sem tbs: erro",
+      "originalInput": {
+        "amb": "aberto",
+        "solar": "1",
+        "tbn": 25,
+        "tg": 45,
+        "m": 300,
+        "roupa": "0"
+      },
+      "input": {
+        "amb": "aberto",
+        "solar": "1",
+        "tbn": 25,
+        "tg": 45,
+        "m": 300,
+        "roupa": "0",
+        "capuz": false
+      },
+      "amendments": [
+        {
+          "field": "capuz",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "error": true
+      },
+      "recordedResult": {
+        "error": "Com carga solar direta, informe também a temperatura de bulbo seco (tbs)."
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "amb": "aberto",
+            "solar": "1",
+            "tbn": 25,
+            "tg": 45,
+            "m": 300,
+            "roupa": "0",
+            "capuz": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+          "startedAt": "2026-10-05T17:38:31.139Z",
+          "status": 422,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "error": "Com carga solar direta, informe também a temperatura de bulbo seco (tbs).",
+            "code": "FORMULA_DOMAIN"
+          },
+          "responseSha256": "bb976390ec8c196f3b3f5203d192c959ad75b0595836b7cdd4ef2d30032e076d",
+          "bytes": 110,
+          "elapsedMs": 5.023499999981141
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/ibutg/calculate",
+        "startedAt": "2026-10-05T17:38:31.139Z",
+        "status": 422,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "error": "Com carga solar direta, informe também a temperatura de bulbo seco (tbs).",
+          "code": "FORMULA_DOMAIN"
+        },
+        "responseSha256": "bb976390ec8c196f3b3f5203d192c959ad75b0595836b7cdd4ef2d30032e076d",
+        "bytes": 110,
+        "elapsedMs": 5.023499999981141
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "recorded-rejection",
+            "expected": "4xx with error and no result",
+            "obtained": {
+              "status": 422,
+              "error": "Com carga solar direta, informe também a temperatura de bulbo seco (tbs).",
+              "result": false
+            },
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
