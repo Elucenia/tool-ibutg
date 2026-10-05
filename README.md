@@ -1,61 +1,32 @@
 # IBUTG e limite de exposição ao calor (NR-15)
 
-Identificador: `ibutg`. Pacote independente da plataforma ELUCENIA, para navegador e Node.js.
+ELUCENIA · Felipe Guedes. Current isolated per-tool source candidate.
 
-## Situação
+## Documentation in ten languages
 
-- Revisão: **needs-review**. Revisão documental e clínica independente pendente.
-- Execução: **disponível para reprodução técnica da fórmula**.
-- Validação clínica independente: **não realizada**. Os testes abaixo verificam aritmética e transporte dos campos.
-- 6 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **realizada em 2026-09-25**, 40 comparações conformes.
-- Dados: o exemplo funciona localmente, sem rede, armazenamento ou identificação de pacientes.
+- [Português (Brasil)](documentation/pt-BR.md) · [ELUCENIA](https://elucenia.org/pt-br/ferramentas/ibutg)
+- [English](documentation/en.md) · [ELUCENIA](https://elucenia.org/en/tools/ibutg)
+- [Español](documentation/es.md) · [ELUCENIA](https://elucenia.org/es/herramientas/ibutg)
+- [Français](documentation/fr.md) · [ELUCENIA](https://elucenia.org/fr/outils/ibutg)
+- [Deutsch](documentation/de.md) · [ELUCENIA](https://elucenia.org/de/werkzeuge/ibutg)
+- [Italiano](documentation/it.md) · [ELUCENIA](https://elucenia.org/it/strumenti/ibutg)
+- [العربية](documentation/ar.md) · [ELUCENIA](https://elucenia.org/ar/tools/ibutg)
+- [中文](documentation/zh.md) · [ELUCENIA](https://elucenia.org/zh/tools/ibutg)
+- [日本語](documentation/ja.md) · [ELUCENIA](https://elucenia.org/ja/tools/ibutg)
+- [हिन्दी](documentation/hi.md) · [ELUCENIA](https://elucenia.org/hi/tools/ibutg)
 
-## Uso no Node.js
+The README introduction is in English; the linked usage, field, method, limits, source and review documentation is available in each listed language. Bibliographic titles and schema identifiers retain their source identity.
 
-```js
-const { calculate } = require('./calculator.js');
-const example = require('./examples.json')[0];
-console.log(calculate(example.input));
-```
+## Local use and tests
 
-Execute `node test.cjs` (ou `npm test`) para conferir os exemplos. Abra `index.html` para usar a versão local do navegador. Não há dependências npm.
+Serve this directory with a static HTTP server and open index.html. The demonstration calculates locally and supports the ten linked authorial interface/documentation editions. Node: require("./calculator.js").calculate(input). Run `node test.cjs` or `npm test` to replay all 6 documented source examples and 52 schema/domain rejection cases. Tests verify the package files before executing and write no files. No dependency install, remote calculation API, account or app source tree is required.
 
-## Contrato
+## Edition and evidence
 
-`calculate(input)` recebe um objeto, devolve `{id, main, label, raw, clinicalValidation}` ou `{error, code, field?}`. Consulte `tool.json` e `metadata.fields` para nomes, unidades, opções e intervalos. Números aceitam valores finitos ou strings numéricas; opções precisam corresponder às chaves documentadas. Campos obrigatórios vazios, booleanos inválidos, valores fora de intervalo e resultados não finitos são rejeitados. Somente checkbox omitido representa falso; um campo numérico ou uma opção obrigatória nunca é preenchido automaticamente.
+NR 15 Anexo 3 Portaria 1359/2019 e NR 9 Anexo III:WBGTsem/comsol; ajustevestimenta; tabelametabólica
 
-Interpretações, ordens terapêuticas e tabelas herdadas não são retornadas pelo adaptador. Classificações e valores ainda dependem da população e das limitações da fonte.
+results.json records fresh current source and packaged browser VM parity. Browser VM is an isolated JavaScript realm, not a real browser UI/hydration journey. The new served HTTP R6 replay is pending and will be attached only after completion. Existing synthetic source expectations are not a newly derived clinical oracle. Independent clinical and professional language approval have not been performed.
 
-## Fórmula / versão
+## Source and licence scope
 
-Sem carga solar: IBUTG = 0,7 tbn + 0,3 tg. Com carga solar: IBUTG = 0,7 tbn + 0,1 tbs + 0,2 tg (NHO 06 da Fundacentro).Ao IBUTG soma-se o ajuste da vestimenta (Quadro 4 do Anexo 3 da NR-9; capuz +1 °C). O resultado é comparado com o IBUTG máximo do Quadro 1 do Anexo 3 da NR-15 (limite de exposição) e com o Quadro 1 do Anexo 3 da NR-9 (nível de ação), na linha da maior taxa metabólica tabelada que não ultrapassa a informada.
-
-A transcrição acima documenta o acervo de origem e pode requerer atualização. 
-
-## Condições e limites
-
-Avalia a sobrecarga térmica de uma atividade pelo IBUTG e compara com o limite de exposição ocupacional (insalubridade) e o nível de ação das normas regulamentadoras.
-
-Confirme população, exclusões, unidades, versão e diretriz aplicável ao país e serviço. O resultado não deve ser utilizado isoladamente para diagnóstico, alta ou prescrição. O pacote não representa certificação clínica, aprovação regulatória ou indicação para toda população. Veja a revisão completa em `tool.json`.
-
-## Fontes originais
-
-- [Brasil. Ministério do Trabalho e Emprego. Norma Regulamentadora nº 15 (NR-15): Atividades e Operações Insalubres, com o Anexo 3 alterado pela Portaria SEPRT nº 1.359/2019.](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15)
-- [Brasil. Ministério do Trabalho e Emprego. Norma Regulamentadora nº 9 (NR-9): Avaliação e controle das exposições ocupacionais a agentes físicos, químicos e biológicos, Anexo 3 (Calor).](https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-9-nr-9)
-
-## Exemplos e rastreabilidade
-
-`examples.json` preserva `originalInput`, expectativa e entrada explícita do exemplo. Não foi necessário expandir opções zero nos exemplos.
-
-## O que esta ferramenta não faz
-
-- Não diagnostica, não prescreve e não substitui a avaliação de um médico. O resultado é a reprodução técnica de uma fórmula ou escore publicado.
-- Não envia dados a lugar nenhum: roda no navegador ou no Node.js, sem rede, sem telemetria, sem armazenamento.
-- Não guarda nem identifica pacientes. Não use com dados identificáveis fora de um ambiente que você controla.
-- Não tem validação clínica independente nem aprovação regulatória (ver "Situação").
-
-## Autoria e licença
-
-Criado e mantido por **Felipe Guedes** (Engenheiro de Software e Arquiteto de Sistemas, Toledo, Paraná, Brasil) para a **ELUCENIA**, uma cadeia médica e científica global para acelerar a descoberta. Criado em 2026-09-25 na organização [github.com/Elucenia](https://github.com/Elucenia).
-
-Licença **Apache-2.0** (arquivo `LICENSE`): você pode usar, copiar, modificar e embutir este código no seu site ou sistema, inclusive comercial, desde que mantenha o arquivo `NOTICE` e o aviso de copyright e declare as modificações. A licença cobre o código deste pacote; instrumentos, questionários, tabelas, traduções e marcas citados nas fontes mantêm os direitos dos seus titulares (ver `NOTICE`). Detalhes em `AUTHORSHIP.md`, `CITATION.cff`, `SECURITY.md` e `CONTRIBUTING.md`. Contato: contato@elucenia.org.
+Scientific sources, inputs, units, formula and population limits are recorded in tool.json and the ten documentation files. Original Apache attribution files and current MIT component notices are preserved without rewriting. CODE-COMPONENTS.md maps the licences. SOURCE-RIGHTS-REVIEW.md records the separate third-party questionnaire/instrument-expression and translation review scope. No instrument-wide permission or official endorsement is claimed.

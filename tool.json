@@ -3,12 +3,12 @@
     "id": "ibutg",
     "title": "IBUTG e limite de exposição ao calor (NR-15)",
     "short": "Índice de bulbo úmido termômetro de globo",
+    "desc": "Calcule o IBUTG e compare com o limite de exposição e o nível de ação ao calor para a taxa metabólica, pelo Anexo 3 da NR-15 e pelo Anexo 3 da NR-9.",
+    "lead": "Avalia a sobrecarga térmica de uma atividade pelo IBUTG e compara com o limite de exposição ocupacional (insalubridade) e o nível de ação das normas regulamentadoras.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-do-trabalho"
     ],
-    "tier": 1,
-    "desc": "Calcule o IBUTG e compare com o limite de exposição e o nível de ação ao calor para a taxa metabólica, pelo Anexo 3 da NR-15 e pelo Anexo 3 da NR-9.",
-    "lead": "Avalia a sobrecarga térmica de uma atividade pelo IBUTG e compara com o limite de exposição ocupacional (insalubridade) e o nível de ação das normas regulamentadoras.",
     "fields": [
       [
         "amb",
@@ -100,57 +100,10 @@
         "capuz",
         "Vestimenta com capuz (+1 °C)",
         "chk",
-        {
-          "pts": 0
-        }
+        {}
       ]
     ],
     "formula": "<p>Sem carga solar: <strong>IBUTG = 0,7 tbn + 0,3 tg</strong>. Com carga solar: <strong>IBUTG = 0,7 tbn + 0,1 tbs + 0,2 tg</strong> (NHO 06 da Fundacentro).</p><p>Ao IBUTG soma-se o ajuste da vestimenta (Quadro 4 do Anexo 3 da NR-9; capuz +1 °C). O resultado é comparado com o IBUTG máximo do Quadro 1 do Anexo 3 da NR-15 (limite de exposição) e com o Quadro 1 do Anexo 3 da NR-9 (nível de ação), na linha da maior taxa metabólica tabelada que não ultrapassa a informada.</p>",
-    "table": [
-      [
-        "Taxa metabólica (W)",
-        "Limite de exposição (IBUTG máx.)",
-        "Nível de ação"
-      ],
-      [
-        "100",
-        "33,7 °C",
-        "31,7 °C"
-      ],
-      [
-        "150",
-        "31,7 °C",
-        "29,2 °C"
-      ],
-      [
-        "200",
-        "30,3 °C",
-        "27,5 °C"
-      ],
-      [
-        "300",
-        "28,2 °C",
-        "25,0 °C"
-      ],
-      [
-        "414",
-        "26,6 °C",
-        "23,0 °C"
-      ],
-      [
-        "606",
-        "24,7 °C",
-        "20,7 °C"
-      ]
-    ],
-    "table_note": "Trechos dos quadros oficiais (a calculadora usa as tabelas completas). Exemplos de taxa metabólica do Quadro 2 da NR-15: sentado em repouso 100 W; em pé, trabalho leve com as mãos 153 W; andando no plano a 4 km/h sem carga 297 W; trabalho moderado de braços (varrer) 320 W; remoção com pá ou abertura de valas 524 W.",
-    "tips": [
-      "Pela Portaria SEPRT nº 1.359/2019, a <strong>insalubridade</strong> por calor (grau médio) só se caracteriza em ambiente fechado ou com fonte artificial de calor; o Anexo 3 da NR-15 não se aplica a atividades a céu aberto sem fonte artificial. As medidas preventivas e corretivas da NR-9 valem nos dois casos.",
-      "A avaliação legal usa o <strong>IBUTG médio e a taxa metabólica média</strong> da janela de 60 minutos corridos mais crítica da jornada, medidos conforme a NHO 06: uma leitura isolada é só uma triagem.",
-      "A antiga tabela de \"regime de trabalho intermitente com descanso\" (leve, moderado, pesado) foi substituída em 2019 pelos quadros por taxa metabólica: não use mais os limites antigos de 30,0 / 26,7 / 25,0 °C.",
-      "Os limites valem para trabalhadores <strong>aclimatizados</strong> e aptos em avaliação médica. Acima do nível de ação, o PCMSO deve prever a aclimatização; acima do limite, exames e monitoramento fisiológico.",
-      "Vestimentas impermeáveis ao vapor (EPIs químicos) somam até 12 °C ao IBUTG: nessas situações, o risco de hipertermia é alto mesmo em ambiente ameno."
-    ],
     "sources": [
       [
         "Brasil. Ministério do Trabalho e Emprego. Norma Regulamentadora nº 15 (NR-15): Atividades e Operações Insalubres, com o Anexo 3 alterado pela Portaria SEPRT nº 1.359/2019.",
@@ -273,9 +226,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -284,17 +234,393 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:50:35.156Z",
+      "total": 1512,
+      "passed": 1512,
+      "sourceRowCount": 1512,
+      "uniqueApiInputCount": 1512,
+      "sourceContextCount": 1512,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "cf617024498789e3271f2941c5fb854dda47e337112b0c62495d30c1d2b08f91",
+        "total": 1512,
+        "bankRowCount": 1512,
+        "uniqueApiInputCount": 1512,
+        "sourceContextCount": 1512,
+        "fullStoredSourceRows": 1512,
+        "localRejectionContractCount": 0,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-occupational-independent-expectations-final34-r2.json",
+            "sha256": "a3a4aa6379daddf1da1f55c9b7d8bbdd47fc8395229b1d7a565b3fb272e4f09f"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+          "sha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d"
+        },
+        "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+      },
+      "scope": "27exactcommonmetabolicpoints ×2solar ×2ambient ×7clothing ×2hood. PureWBGT and adjustment, exacttablenumbers. Floorlookupinterpolation/60minprotocol and legal advice excluded. Only selected unrounded/raw numerical fields.",
+      "sourceEvidence": {
+        "review": {
+          "file": "reports/review-20261003/root-six-primary-source-review-final34.json",
+          "sha256": "7eb9bcee5678461a6ec6fc8d2ddbec4673ca95423dc4234195add5669d1b6ef1"
+        },
+        "reading": {
+          "edition": "WBGT coefficients NIOSH2016 section9.3.2; exact NR9 AnexoIII2021/2026 common table points and clothing increments",
+          "evidence": [
+            {
+              "file": "reports/review-20261003/root-source34-primary-r2/nr9-heat2021.pdf",
+              "sha256": "031d15e09f09f10ea2673028cbd56562e60b5e777d52306eba2fa5291ff8e4fe",
+              "personallyReadPages": [
+                7,
+                9,
+                10,
+                11,
+                13
+              ],
+              "scope": "Read original2021 action/exposure tables and clothing; exact selected common metabolic points only."
+            },
+            {
+              "file": "reports/review-20261003/root-source34-primary-r3/nr9-2026-official.pdf",
+              "sha256": "9cc608eb7766ca7565234d2069d3491d2714e26d0c76de3aa043105521a8d584",
+              "personallyReadPages": [
+                9,
+                10,
+                11,
+                13,
+                15
+              ],
+              "scope": "Current2026 section3.3 still refers to NHO06secondedition2017; updated action label includes nonacclimated limit and changed breaks. No legal compliance approval."
+            }
+          ],
+          "webRead": [
+            {
+              "url": "https://www.cdc.gov/niosh/docs/2016-106/pdfs/2016-106.pdf",
+              "pdfPage": 145,
+              "printedPage": 113,
+              "section": "9.3.2",
+              "readStatus": "Personally read extracted primary text via web tool; local download403 retained, no local PDF receipt fabricated."
+            }
+          ],
+          "unread": [
+            "Full NHO06secondedition2017: both official paths returned HTML rather than PDF. NHO06thirdedition2025 is not assumed identical."
+          ],
+          "excluded": [
+            "Intermediate metabolic floor lookup, whole60minute protocol, fitness/acclimatization and legal decisions. No source approval of choosing the less restrictive lower metabolic row."
+          ]
+        }
+      },
+      "evidencePath": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+      "evidenceSha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/root-six-occupational-independent-peer-western-final34.json",
+          "sha256": "4a3f28aac8033967298f28a2b1ef66125727f9310b0ba9ea46cf5d44222db784"
+        },
+        "scope": "Own independent primary selected-math peer; source/rubric/right/clinical exclusions retained."
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/ibutg/calculator.js",
+          "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/ibutg/calculator.js",
+          "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/ibutg/calculator.js",
+          "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+        }
+      ],
+      "qualifications": [
+        "Intermediate metabolic floorlookup, total measurementprotocol, medicalfitness and legal decisions excluded.",
+        "Original54 WAI final-display observations remain pre-repair findings; this bank does not approve final rounded score/level/rubric. Current/future raw.score preserves unrounded sum."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "NR 15 Anexo 3 Portaria 1359/2019 e NR 9 Anexo III:WBGTsem/comsol; ajustevestimenta; tabelametabólica",
+    "implementationVersion": "ibutg@native-2026-10-03+f224aedece8f",
+    "currentMethodSource": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Sem carga solar: IBUTG = 0,7 tbn + 0,3 tg . Com carga solar: IBUTG = 0,7 tbn + 0,1 tbs + 0,2 tg (NHO 06 da Fundacentro). Ao IBUTG soma-se o ajuste da vestimenta (Quadro 4 do Anexo 3 da NR-9; capuz +1 °C). O resultado é comparado com o IBUTG máximo do Quadro 1 do Anexo 3 da NR-15 (limite de exposição) e com o Quadro 1 do Anexo 3 da NR-9 (nível de ação), na linha da maior taxa metabólica tabelada que não ultrapassa a informada.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "amb",
+            "label": "Local da atividade",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "fechado": "Ambiente fechado ou com fonte artificial de calor",
+              "aberto": "Céu aberto, sem fonte artificial de calor"
+            }
+          },
+          {
+            "key": "solar",
+            "label": "Há carga solar direta no ponto de medição?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          },
+          {
+            "key": "tbn",
+            "label": "Temperatura de bulbo úmido natural (tbn)",
+            "type": "num",
+            "min": 0,
+            "max": 45,
+            "unit": "°C",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tg",
+            "label": "Temperatura de globo (tg)",
+            "type": "num",
+            "min": 0,
+            "max": 90,
+            "unit": "°C",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "tbs",
+            "label": "Temperatura de bulbo seco (tbs), só com carga solar",
+            "type": "num",
+            "min": 0,
+            "max": 60,
+            "unit": "°C",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "m",
+            "label": "Taxa metabólica média da atividade (Quadro 2 da NR-15)",
+            "type": "num",
+            "min": 100,
+            "max": 606,
+            "unit": "W",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "roupa",
+            "label": "Vestimenta",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Uniforme (calça e camisa de manga longa) ou macacão de tecido: +0",
+              "2": "Macacão de poliolefina: +2 °C",
+              "3": "Vestimenta ou macacão forrado (tecido duplo): +3 °C",
+              "4": "Avental longo de manga longa impermeável ao vapor: +4 °C",
+              "10": "Macacão impermeável ao vapor: +10 °C",
+              "12": "Macacão impermeável ao vapor sobre a roupa de trabalho: +12 °C",
+              "0.5": "Macacão de polipropileno SMS: +0,5 °C"
+            }
+          },
+          {
+            "key": "capuz",
+            "label": "Vestimenta com capuz (+1 °C)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "926739befa22946bdd583e7e0cbc796ba5d8542357a2fdcc9b2ea33ddb303c46"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Brasil. Ministério do Trabalho e Emprego. Norma Regulamentadora nº 15 (NR-15): Atividades e Operações Insalubres, com o Anexo 3 alterado pela Portaria SEPRT nº 1.359/2019.",
+          "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15",
+          "class": "institutional-publication-page-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "edition": "NR-15 official current publication page checked 2026-10-03; noise Annex 1 and heat Annex 3 are distinct methods.",
+          "conferred": "Current publication page accessed; every numerical annex table was not independently compared in this edition-recording audit."
+        },
+        {
+          "citation": "Brasil. Ministério do Trabalho e Emprego. Norma Regulamentadora nº 9 (NR-9): Avaliação e controle das exposições ocupacionais a agentes físicos, químicos e biológicos, Anexo 3 (Calor).",
+          "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-9-nr-9",
+          "class": "institutional-publication-page-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "edition": "NR-9 official current publication page checked 2026-10-03; heat Annex III."
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:50:35.156Z",
+        "total": 1512,
+        "passed": 1512,
+        "sourceRowCount": 1512,
+        "uniqueApiInputCount": 1512,
+        "sourceContextCount": 1512,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "cf617024498789e3271f2941c5fb854dda47e337112b0c62495d30c1d2b08f91",
+          "total": 1512,
+          "bankRowCount": 1512,
+          "uniqueApiInputCount": 1512,
+          "sourceContextCount": 1512,
+          "fullStoredSourceRows": 1512,
+          "localRejectionContractCount": 0,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-occupational-independent-expectations-final34-r2.json",
+              "sha256": "a3a4aa6379daddf1da1f55c9b7d8bbdd47fc8395229b1d7a565b3fb272e4f09f"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+            "sha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d"
+          },
+          "packagingRequirement": "Copy every complete bank byte exactly. Rebind future source/edition/code amendments explicitly; no rounding/clinical/rights scope expansion."
+        },
+        "scope": "27exactcommonmetabolicpoints ×2solar ×2ambient ×7clothing ×2hood. PureWBGT and adjustment, exacttablenumbers. Floorlookupinterpolation/60minprotocol and legal advice excluded. Only selected unrounded/raw numerical fields.",
+        "sourceEvidence": {
+          "review": {
+            "file": "reports/review-20261003/root-six-primary-source-review-final34.json",
+            "sha256": "7eb9bcee5678461a6ec6fc8d2ddbec4673ca95423dc4234195add5669d1b6ef1"
+          },
+          "reading": {
+            "edition": "WBGT coefficients NIOSH2016 section9.3.2; exact NR9 AnexoIII2021/2026 common table points and clothing increments",
+            "evidence": [
+              {
+                "file": "reports/review-20261003/root-source34-primary-r2/nr9-heat2021.pdf",
+                "sha256": "031d15e09f09f10ea2673028cbd56562e60b5e777d52306eba2fa5291ff8e4fe",
+                "personallyReadPages": [
+                  7,
+                  9,
+                  10,
+                  11,
+                  13
+                ],
+                "scope": "Read original2021 action/exposure tables and clothing; exact selected common metabolic points only."
+              },
+              {
+                "file": "reports/review-20261003/root-source34-primary-r3/nr9-2026-official.pdf",
+                "sha256": "9cc608eb7766ca7565234d2069d3491d2714e26d0c76de3aa043105521a8d584",
+                "personallyReadPages": [
+                  9,
+                  10,
+                  11,
+                  13,
+                  15
+                ],
+                "scope": "Current2026 section3.3 still refers to NHO06secondedition2017; updated action label includes nonacclimated limit and changed breaks. No legal compliance approval."
+              }
+            ],
+            "webRead": [
+              {
+                "url": "https://www.cdc.gov/niosh/docs/2016-106/pdfs/2016-106.pdf",
+                "pdfPage": 145,
+                "printedPage": 113,
+                "section": "9.3.2",
+                "readStatus": "Personally read extracted primary text via web tool; local download403 retained, no local PDF receipt fabricated."
+              }
+            ],
+            "unread": [
+              "Full NHO06secondedition2017: both official paths returned HTML rather than PDF. NHO06thirdedition2025 is not assumed identical."
+            ],
+            "excluded": [
+              "Intermediate metabolic floor lookup, whole60minute protocol, fitness/acclimatization and legal decisions. No source approval of choosing the less restrictive lower metabolic row."
+            ]
+          }
+        },
+        "evidencePath": "reports/review-20261003/root-occupational-independent-source-check-final34-r2.json",
+        "evidenceSha256": "3da9531d7c62262a08e42440b6bf71b45ec903f2c22796f813d4eedc8cfe585d",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/root-six-occupational-independent-peer-western-final34.json",
+            "sha256": "4a3f28aac8033967298f28a2b1ef66125727f9310b0ba9ea46cf5d44222db784"
+          },
+          "scope": "Own independent primary selected-math peer; source/rubric/right/clinical exclusions retained."
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/ibutg/calculator.js",
+            "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/ibutg/calculator.js",
+            "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/ibutg/calculator.js",
+            "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+          }
+        ],
+        "qualifications": [
+          "Intermediate metabolic floorlookup, total measurementprotocol, medicalfitness and legal decisions excluded.",
+          "Original54 WAI final-display observations remain pre-repair findings; this bank does not approve final rounded score/level/rubric. Current/future raw.score preserves unrounded sum."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+    },
+    "limits": "O limite de insalubridade da NR-15 Anexo 3 refere-se a ambientes fechados ou com fonte artificial de calor; esse anexo exclui trabalho a céu aberto sem fonte artificial. A avaliação exige procedimentos NHO 06 e médias representativas dos 60 minutos consecutivos de exposição mais crítica. O cálculo isolado não caracteriza insalubridade sem avaliação e laudo previstos na norma. Os requisitos preventivos da NR-9 têm escopo próprio e não devem ser confundidos com essa exclusão.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.017Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo bibliográfico não se aplica à norma. Anexos NR-15 e NR-9 vigentes, condições de ambiente, aclimatação, roupas e período de medição aguardam leitura institucional direta.",
+        "NHO 06 integral, fórmulas IBUTG e todos os limiares/alvos NR-9 ainda não relidos. Não inferir aplicação universal do limite de insalubridade da NR-15 a toda exposição preventiva ao calor."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/ibutg/calculator.js",
+    "bytes": 7999,
+    "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "c3f94b7527b7bf5691bd981b3c6998af0f2ea44934739b0e25bf0220f45b72d3",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "8405a34b1e9282ef16eb6a1535db492023d4aa8bb85297726594c2fc56f62d6a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "8405a34b1e9282ef16eb6a1535db492023d4aa8bb85297726594c2fc56f62d6a",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

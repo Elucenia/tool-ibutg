@@ -1,13 +1,25 @@
 [
   {
-    "label": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
-    "input": {
+    "id": "ibutg",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+    "originalInput": {
       "amb": "fechado",
       "solar": "0",
       "tbn": 25,
       "tg": 40,
       "m": 300,
       "roupa": "0"
+    },
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
     },
     "expected": {
       "raw": {
@@ -18,25 +30,49 @@
       "level": "high",
       "verdict": "insalubre"
     },
-    "originalInput": {
-      "amb": "fechado",
-      "solar": "0",
-      "tbn": 25,
-      "tg": 40,
-      "m": 300,
-      "roupa": "0"
+    "recordedResult": {
+      "main": [
+        "29,5",
+        "°C"
+      ],
+      "label": "IBUTG",
+      "raw": {
+        "ibutg": 29.5,
+        "base": 29.5,
+        "lim": 28.2,
+        "acao": 25
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
-    "input": {
+    "id": "ibutg",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+    "originalInput": {
       "amb": "fechado",
       "solar": "0",
       "tbn": 22,
       "tg": 30,
       "m": 200,
       "roupa": "0"
+    },
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 22,
+      "tg": 30,
+      "m": 200,
+      "roupa": "0",
+      "capuz": false
     },
     "expected": {
       "raw": {
@@ -46,25 +82,49 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "amb": "fechado",
-      "solar": "0",
-      "tbn": 22,
-      "tg": 30,
-      "m": 200,
-      "roupa": "0"
+    "recordedResult": {
+      "main": [
+        "24,4",
+        "°C"
+      ],
+      "label": "IBUTG",
+      "raw": {
+        "ibutg": 24.4,
+        "base": 24.4,
+        "lim": 30.3,
+        "acao": 27.5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
-    "input": {
+    "id": "ibutg",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+    "originalInput": {
       "amb": "fechado",
       "solar": "0",
       "tbn": 25,
       "tg": 32,
       "m": 250,
       "roupa": "0"
+    },
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 32,
+      "m": 250,
+      "roupa": "0",
+      "capuz": false
     },
     "expected": {
       "raw": {
@@ -74,19 +134,34 @@
       },
       "level": "mid"
     },
-    "originalInput": {
-      "amb": "fechado",
-      "solar": "0",
-      "tbn": 25,
-      "tg": 32,
-      "m": 250,
-      "roupa": "0"
+    "recordedResult": {
+      "main": [
+        "27,1",
+        "°C"
+      ],
+      "label": "IBUTG",
+      "raw": {
+        "ibutg": 27.1,
+        "base": 27.1,
+        "lim": 29.2,
+        "acao": 26.1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
-    "input": {
+    "id": "ibutg",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+    "originalInput": {
       "amb": "aberto",
       "solar": "1",
       "tbn": 25,
@@ -94,6 +169,16 @@
       "tg": 45,
       "m": 360,
       "roupa": "0"
+    },
+    "input": {
+      "amb": "aberto",
+      "solar": "1",
+      "tbn": 25,
+      "tbs": 32,
+      "tg": 45,
+      "m": 360,
+      "roupa": "0",
+      "capuz": false
     },
     "expected": {
       "raw": {
@@ -103,26 +188,49 @@
       "level": "high",
       "verdict": "não se aplica"
     },
-    "originalInput": {
-      "amb": "aberto",
-      "solar": "1",
-      "tbn": 25,
-      "tbs": 32,
-      "tg": 45,
-      "m": 360,
-      "roupa": "0"
+    "recordedResult": {
+      "main": [
+        "29,7",
+        "°C"
+      ],
+      "label": "IBUTG",
+      "raw": {
+        "ibutg": 29.7,
+        "base": 29.7,
+        "lim": 27.3,
+        "acao": 23.9
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
-    "input": {
+    "id": "ibutg",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+    "originalInput": {
       "amb": "fechado",
       "solar": "0",
       "tbn": 22,
       "tg": 30,
       "m": 200,
       "roupa": "10"
+    },
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 22,
+      "tg": 30,
+      "m": 200,
+      "roupa": "10",
+      "capuz": false
     },
     "expected": {
       "raw": {
@@ -131,37 +239,63 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "amb": "fechado",
-      "solar": "0",
-      "tbn": 22,
-      "tg": 30,
-      "m": 200,
-      "roupa": "10"
+    "recordedResult": {
+      "main": [
+        "34,4",
+        "°C"
+      ],
+      "label": "IBUTG ajustado pela vestimenta",
+      "raw": {
+        "ibutg": 34.4,
+        "base": 24.4,
+        "lim": 30.3,
+        "acao": 27.5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Carga solar sem tbs: erro",
+    "id": "ibutg",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "Carga solar sem tbs: erro",
+    "originalInput": {
+      "amb": "aberto",
+      "solar": "1",
+      "tbn": 25,
+      "tg": 45,
+      "m": 300,
+      "roupa": "0"
+    },
     "input": {
       "amb": "aberto",
       "solar": "1",
       "tbn": 25,
       "tg": 45,
       "m": 300,
-      "roupa": "0"
+      "roupa": "0",
+      "capuz": false
     },
     "expected": {
       "error": true
     },
-    "originalInput": {
-      "amb": "aberto",
-      "solar": "1",
-      "tbn": 25,
-      "tg": 45,
-      "m": 300,
-      "roupa": "0"
+    "recordedResult": {
+      "error": "Com carga solar direta, informe também a temperatura de bulbo seco (tbs)."
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

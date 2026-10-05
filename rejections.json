@@ -1,0 +1,856 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field amb",
+    "input": {
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "amb"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field amb",
+    "input": {
+      "amb": "",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "amb"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option amb",
+    "input": {
+      "amb": "__ELUCENIA_INVALID_OPTION__",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "amb"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field solar",
+    "input": {
+      "amb": "fechado",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "solar"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field solar",
+    "input": {
+      "amb": "fechado",
+      "solar": "",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "solar"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option solar",
+    "input": {
+      "amb": "fechado",
+      "solar": "__ELUCENIA_INVALID_OPTION__",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "solar"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": "",
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": "NaN",
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": "Infinity",
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": "1e309",
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": "invalid",
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": {},
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": true,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": -1,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tbn",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 49.5,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tbn"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": "",
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": "NaN",
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": "Infinity",
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": "1e309",
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": "invalid",
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": {},
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": true,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": -1,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tg",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 99,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tbs",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false,
+      "tbs": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tbs",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false,
+      "tbs": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tbs",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false,
+      "tbs": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tbs",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false,
+      "tbs": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tbs",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false,
+      "tbs": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tbs",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false,
+      "tbs": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tbs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tbs",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false,
+      "tbs": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tbs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tbs",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": false,
+      "tbs": 66
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tbs"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": "",
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": "NaN",
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": "Infinity",
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": "1e309",
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": "invalid",
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": {},
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": true,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 90,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum m",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 666.6,
+      "roupa": "0",
+      "capuz": false
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "m"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field roupa",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "roupa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field roupa",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "",
+      "capuz": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "roupa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option roupa",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "__ELUCENIA_INVALID_OPTION__",
+      "capuz": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "roupa"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean capuz",
+    "input": {
+      "amb": "fechado",
+      "solar": "0",
+      "tbn": 25,
+      "tg": 40,
+      "m": 300,
+      "roupa": "0",
+      "capuz": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "capuz"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

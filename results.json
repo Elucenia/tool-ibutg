@@ -1,0 +1,703 @@
+{
+  "id": "ibutg",
+  "at": "2026-10-05T17:29:44.547Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/ibutg/calculator.js",
+    "bytes": 7999,
+    "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+  },
+  "cases": [
+    {
+      "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 25,
+        "tg": 40,
+        "m": 300,
+        "roupa": "0",
+        "capuz": false
+      },
+      "obtained": {
+        "id": "ibutg",
+        "main": [
+          "29,5",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 29.5,
+          "base": 29.5,
+          "lim": 28.2,
+          "acao": 25
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ibutg",
+          "expected": 29.5,
+          "obtained": 29.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lim",
+          "expected": 28.2,
+          "obtained": 28.2,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.acao",
+          "expected": 25,
+          "obtained": 25,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ibutg",
+          "expected": 29.5,
+          "obtained": 29.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.base",
+          "expected": 29.5,
+          "obtained": 29.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lim",
+          "expected": 28.2,
+          "obtained": 28.2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.acao",
+          "expected": 25,
+          "obtained": 25,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "29,5",
+          "obtained": "29,5",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "°C",
+          "obtained": "°C",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 22,
+        "tg": 30,
+        "m": 200,
+        "roupa": "0",
+        "capuz": false
+      },
+      "obtained": {
+        "id": "ibutg",
+        "main": [
+          "24,4",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 24.4,
+          "base": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ibutg",
+          "expected": 24.4,
+          "obtained": 24.4,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lim",
+          "expected": 30.3,
+          "obtained": 30.3,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.acao",
+          "expected": 27.5,
+          "obtained": 27.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ibutg",
+          "expected": 24.4,
+          "obtained": 24.4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.base",
+          "expected": 24.4,
+          "obtained": 24.4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lim",
+          "expected": 30.3,
+          "obtained": 30.3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.acao",
+          "expected": 27.5,
+          "obtained": 27.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "24,4",
+          "obtained": "24,4",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "°C",
+          "obtained": "°C",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 25,
+        "tg": 32,
+        "m": 250,
+        "roupa": "0",
+        "capuz": false
+      },
+      "obtained": {
+        "id": "ibutg",
+        "main": [
+          "27,1",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 27.1,
+          "base": 27.1,
+          "lim": 29.2,
+          "acao": 26.1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ibutg",
+          "expected": 27.1,
+          "obtained": 27.1,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lim",
+          "expected": 29.2,
+          "obtained": 29.2,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.acao",
+          "expected": 26.1,
+          "obtained": 26.1,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ibutg",
+          "expected": 27.1,
+          "obtained": 27.1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.base",
+          "expected": 27.1,
+          "obtained": 27.1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lim",
+          "expected": 29.2,
+          "obtained": 29.2,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.acao",
+          "expected": 26.1,
+          "obtained": 26.1,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "27,1",
+          "obtained": "27,1",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "°C",
+          "obtained": "°C",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+      "input": {
+        "amb": "aberto",
+        "solar": "1",
+        "tbn": 25,
+        "tbs": 32,
+        "tg": 45,
+        "m": 360,
+        "roupa": "0",
+        "capuz": false
+      },
+      "obtained": {
+        "id": "ibutg",
+        "main": [
+          "29,7",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 29.7,
+          "base": 29.7,
+          "lim": 27.3,
+          "acao": 23.9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ibutg",
+          "expected": 29.7,
+          "obtained": 29.7,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.lim",
+          "expected": 27.3,
+          "obtained": 27.3,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ibutg",
+          "expected": 29.7,
+          "obtained": 29.7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.base",
+          "expected": 29.7,
+          "obtained": 29.7,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lim",
+          "expected": 27.3,
+          "obtained": 27.3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.acao",
+          "expected": 23.9,
+          "obtained": 23.9,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "29,7",
+          "obtained": "29,7",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "°C",
+          "obtained": "°C",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 22,
+        "tg": 30,
+        "m": 200,
+        "roupa": "10",
+        "capuz": false
+      },
+      "obtained": {
+        "id": "ibutg",
+        "main": [
+          "34,4",
+          "°C"
+        ],
+        "label": "IBUTG ajustado pela vestimenta",
+        "raw": {
+          "ibutg": 34.4,
+          "base": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ibutg",
+          "expected": 34.4,
+          "obtained": 34.4,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.base",
+          "expected": 24.4,
+          "obtained": 24.4,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ibutg",
+          "expected": 34.4,
+          "obtained": 34.4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.base",
+          "expected": 24.4,
+          "obtained": 24.4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.lim",
+          "expected": 30.3,
+          "obtained": 30.3,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.acao",
+          "expected": 27.5,
+          "obtained": 27.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "34,4",
+          "obtained": "34,4",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "°C",
+          "obtained": "°C",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Carga solar sem tbs: erro",
+      "input": {
+        "amb": "aberto",
+        "solar": "1",
+        "tbn": 25,
+        "tg": 45,
+        "m": 300,
+        "roupa": "0",
+        "capuz": false
+      },
+      "obtained": {
+        "error": "Com carga solar direta, informe também a temperatura de bulbo seco (tbs).",
+        "code": "FORMULA_DOMAIN"
+      },
+      "checks": [
+        {
+          "at": "recorded-rejection",
+          "expected": "4xx with error and no result",
+          "obtained": {
+            "status": 422,
+            "error": "Com carga solar direta, informe também a temperatura de bulbo seco (tbs).",
+            "result": false
+          },
+          "passed": true
+        }
+      ],
+      "notCompared": [],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 52,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
