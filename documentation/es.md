@@ -109,3 +109,73 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Por encima del límite de exposición: actividad insalubre en grado medio (NR-15, Anexo 3) y medidas correctivas obligatorias (NR-9)
+
+| Detalles del resultado | |
+| --- | --- |
+| IBUTG calculado (sin ajuste de vestimenta) | 29,5 °C |
+| Límite de exposición para 300 W (IBUTG máx.) | 28,2 °C |
+| Nivel de acción para 300 W | 25,0 °C |
+
+La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.
+
+
+### 2
+
+Por debajo del nivel de acción para esta tasa metabólica
+
+| Detalles del resultado | |
+| --- | --- |
+| IBUTG calculado (sin ajuste de vestimenta) | 24,4 °C |
+| Límite de exposición para 200 W (IBUTG máx.) | 30,3 °C |
+| Nivel de acción para 200 W | 27,5 °C |
+
+La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.
+
+
+### 3
+
+Por encima del nivel de acción y por debajo del límite: medidas preventivas (agua fresca, trabajo pesado en los horarios más frescos, aclimatación)
+
+| Detalles del resultado | |
+| --- | --- |
+| IBUTG calculado (sin ajuste de vestimenta) | 27,1 °C |
+| Límite de exposición para 250 W (IBUTG máx.) | 29,2 °C |
+| Nivel de acción para 250 W | 26,1 °C |
+
+La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.
+
+
+### 4
+
+Por encima del límite de exposición ocupacional: medidas correctivas obligatorias (NR-9). La insalubridad del Anexo 3 de la NR-15 no se aplica a actividades al aire libre sin fuente artificial de calor
+
+| Detalles del resultado | |
+| --- | --- |
+| IBUTG calculado (sin ajuste de vestimenta) | 29,7 °C |
+| Límite de exposición para 360 W (IBUTG máx.) | 27,3 °C |
+| Nivel de acción para 360 W | 23,9 °C |
+
+La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.
+
+
+### 5
+
+Por encima del límite de exposición: actividad insalubre en grado medio (NR-15, Anexo 3) y medidas correctivas obligatorias (NR-9)
+
+| Detalles del resultado | |
+| --- | --- |
+| IBUTG calculado (sin ajuste de vestimenta) | 24,4 °C |
+| Ajuste de vestimenta | +10,0 °C |
+| Límite de exposición para 200 W (IBUTG máx.) | 30,3 °C |
+| Nivel de acción para 200 W | 27,5 °C |
+
+La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.
+

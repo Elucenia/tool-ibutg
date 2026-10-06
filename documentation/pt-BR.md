@@ -109,3 +109,73 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Acima do limite de exposição: atividade insalubre em grau médio (NR-15, Anexo 3) e medidas corretivas obrigatórias (NR-9)
+
+| Detalhes do resultado | |
+| --- | --- |
+| IBUTG calculado (sem ajuste de vestimenta) | 29,5 °C |
+| Limite de exposição para 300 W (IBUTG máx.) | 28,2 °C |
+| Nível de ação para 300 W | 25,0 °C |
+
+A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.
+
+
+### 2
+
+Abaixo do nível de ação para esta taxa metabólica
+
+| Detalhes do resultado | |
+| --- | --- |
+| IBUTG calculado (sem ajuste de vestimenta) | 24,4 °C |
+| Limite de exposição para 200 W (IBUTG máx.) | 30,3 °C |
+| Nível de ação para 200 W | 27,5 °C |
+
+A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.
+
+
+### 3
+
+Acima do nível de ação e abaixo do limite: medidas preventivas (água fresca, trabalho pesado nos horários mais amenos, aclimatização)
+
+| Detalhes do resultado | |
+| --- | --- |
+| IBUTG calculado (sem ajuste de vestimenta) | 27,1 °C |
+| Limite de exposição para 250 W (IBUTG máx.) | 29,2 °C |
+| Nível de ação para 250 W | 26,1 °C |
+
+A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.
+
+
+### 4
+
+Acima do limite de exposição ocupacional: medidas corretivas obrigatórias (NR-9). A insalubridade do Anexo 3 da NR-15 não se aplica a atividades a céu aberto sem fonte artificial de calor
+
+| Detalhes do resultado | |
+| --- | --- |
+| IBUTG calculado (sem ajuste de vestimenta) | 29,7 °C |
+| Limite de exposição para 360 W (IBUTG máx.) | 27,3 °C |
+| Nível de ação para 360 W | 23,9 °C |
+
+A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.
+
+
+### 5
+
+Acima do limite de exposição: atividade insalubre em grau médio (NR-15, Anexo 3) e medidas corretivas obrigatórias (NR-9)
+
+| Detalhes do resultado | |
+| --- | --- |
+| IBUTG calculado (sem ajuste de vestimenta) | 24,4 °C |
+| Ajuste de vestimenta | +10,0 °C |
+| Limite de exposição para 200 W (IBUTG máx.) | 30,3 °C |
+| Nível de ação para 200 W | 27,5 °C |
+
+A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.
+

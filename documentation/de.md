@@ -109,3 +109,73 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Oberhalb der Expositionsgrenze: gesundheitsschädliche Tätigkeit mittleren Grades (NR-15, Anhang 3) und verpflichtende Korrekturmaßnahmen (NR-9)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Berechneter IBUTG (ohne Kleidungskorrektur) | 29,5 °C |
+| Expositionsgrenze für 300 W (max. IBUTG) | 28,2 °C |
+| Maßnahmenstufe für 300 W | 25,0 °C |
+
+Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.
+
+
+### 2
+
+Unterhalb der Maßnahmenstufe für diese Stoffwechselrate
+
+| Ergebnisdetails | |
+| --- | --- |
+| Berechneter IBUTG (ohne Kleidungskorrektur) | 24,4 °C |
+| Expositionsgrenze für 200 W (max. IBUTG) | 30,3 °C |
+| Maßnahmenstufe für 200 W | 27,5 °C |
+
+Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.
+
+
+### 3
+
+Über dem Aktionsniveau und unter der Grenze: vorbeugende Maßnahmen (kühles Wasser, schwere Arbeit in den kühleren Zeiten, Akklimatisierung)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Berechneter IBUTG (ohne Kleidungskorrektur) | 27,1 °C |
+| Expositionsgrenze für 250 W (max. IBUTG) | 29,2 °C |
+| Maßnahmenstufe für 250 W | 26,1 °C |
+
+Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.
+
+
+### 4
+
+Über dem beruflichen Expositionsgrenzwert: verpflichtende Korrekturmaßnahmen (NR-9). Die Regelung zur Gesundheitsgefährdung in Anhang 3 der NR-15 gilt nicht für Tätigkeiten im Freien ohne künstliche Wärmequelle
+
+| Ergebnisdetails | |
+| --- | --- |
+| Berechneter IBUTG (ohne Kleidungskorrektur) | 29,7 °C |
+| Expositionsgrenze für 360 W (max. IBUTG) | 27,3 °C |
+| Maßnahmenstufe für 360 W | 23,9 °C |
+
+Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.
+
+
+### 5
+
+Oberhalb der Expositionsgrenze: gesundheitsschädliche Tätigkeit mittleren Grades (NR-15, Anhang 3) und verpflichtende Korrekturmaßnahmen (NR-9)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Berechneter IBUTG (ohne Kleidungskorrektur) | 24,4 °C |
+| Kleidungsanpassung | +10,0 °C |
+| Expositionsgrenze für 200 W (max. IBUTG) | 30,3 °C |
+| Maßnahmenstufe für 200 W | 27,5 °C |
+
+Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.
+

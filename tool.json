@@ -349,7 +349,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "NR 15 Anexo 3 Portaria 1359/2019 e NR 9 Anexo III:WBGTsem/comsol; ajustevestimenta; tabelametabólica",
-    "implementationVersion": "ibutg@native-2026-10-03+f224aedece8f",
+    "implementationVersion": "ibutg@native-2026-10-05+41e4b900b4af",
     "currentMethodSource": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-15-nr-15",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -584,7 +584,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+      "implementationHash": "41e4b900b4af16a0105abbf9e5de358d6262f8cff641df9cc64669332884e347",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "ibutg@native-2026-10-03+f224aedece8f",
+          "previousImplementationHash": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2",
+          "implementationHash": "41e4b900b4af16a0105abbf9e5de358d6262f8cff641df9cc64669332884e347",
+          "scientificBodySha256": "a174c498c6f9a0c467fc7a20c6e863b9a1ac883cfd3a56427174c6f63c6d277f",
+          "metadataContractHash": "926739befa22946bdd583e7e0cbc796ba5d8542357a2fdcc9b2ea33ddb303c46",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O limite de insalubridade da NR-15 Anexo 3 refere-se a ambientes fechados ou com fonte artificial de calor; esse anexo exclui trabalho a céu aberto sem fonte artificial. A avaliação exige procedimentos NHO 06 e médias representativas dos 60 minutos consecutivos de exposição mais crítica. O cálculo isolado não caracteriza insalubridade sem avaliação e laudo previstos na norma. Os requisitos preventivos da NR-9 têm escopo próprio e não devem ser confundidos com essa exclusão.",
     "sourceLimitEvidence": {
@@ -604,20 +632,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/ibutg/calculator.js",
-    "bytes": 7999,
-    "sha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2"
+    "bytes": 8204,
+    "sha256": "41e4b900b4af16a0105abbf9e5de358d6262f8cff641df9cc64669332884e347"
   },
-  "sourceToolSha256": "c3f94b7527b7bf5691bd981b3c6998af0f2ea44934739b0e25bf0220f45b72d3",
+  "sourceToolSha256": "edc8392b19d5bae09ae21d7d8192b7e17fe22364de6844480b351ecd42b8d524",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "8405a34b1e9282ef16eb6a1535db492023d4aa8bb85297726594c2fc56f62d6a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "8405a34b1e9282ef16eb6a1535db492023d4aa8bb85297726594c2fc56f62d6a",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

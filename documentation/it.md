@@ -109,3 +109,73 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Al di sopra del limite di esposizione: attività insalubre di grado medio (NR-15, Allegato 3) e misure correttive obbligatorie (NR-9)
+
+| Dettagli del risultato | |
+| --- | --- |
+| IBUTG calcolato (senza correzione per l’abbigliamento) | 29,5 °C |
+| Limite di esposizione per 300 W (IBUTG max.) | 28,2 °C |
+| Livello di azione per 300 W | 25,0 °C |
+
+La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.
+
+
+### 2
+
+Al di sotto del livello di azione per questo tasso metabolico
+
+| Dettagli del risultato | |
+| --- | --- |
+| IBUTG calcolato (senza correzione per l’abbigliamento) | 24,4 °C |
+| Limite di esposizione per 200 W (IBUTG max.) | 30,3 °C |
+| Livello di azione per 200 W | 27,5 °C |
+
+La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.
+
+
+### 3
+
+Al di sopra del livello di azione e al di sotto del limite: misure preventive (acqua fresca, lavori pesanti negli orari più freschi, acclimatazione)
+
+| Dettagli del risultato | |
+| --- | --- |
+| IBUTG calcolato (senza correzione per l’abbigliamento) | 27,1 °C |
+| Limite di esposizione per 250 W (IBUTG max.) | 29,2 °C |
+| Livello di azione per 250 W | 26,1 °C |
+
+La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.
+
+
+### 4
+
+Al di sopra del limite di esposizione occupazionale: misure correttive obbligatorie (NR-9). L'insalubrità dell'Allegato 3 della NR-15 non si applica alle attività all'aperto senza fonte artificiale di calore
+
+| Dettagli del risultato | |
+| --- | --- |
+| IBUTG calcolato (senza correzione per l’abbigliamento) | 29,7 °C |
+| Limite di esposizione per 360 W (IBUTG max.) | 27,3 °C |
+| Livello di azione per 360 W | 23,9 °C |
+
+La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.
+
+
+### 5
+
+Al di sopra del limite di esposizione: attività insalubre di grado medio (NR-15, Allegato 3) e misure correttive obbligatorie (NR-9)
+
+| Dettagli del risultato | |
+| --- | --- |
+| IBUTG calcolato (senza correzione per l’abbigliamento) | 24,4 °C |
+| Aggiustamento dell'abbigliamento | +10,0 °C |
+| Limite di esposizione per 200 W (IBUTG max.) | 30,3 °C |
+| Livello di azione per 200 W | 27,5 °C |
+
+La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.
+

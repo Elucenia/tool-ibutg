@@ -1,0 +1,3709 @@
+{
+  "id": "ibutg",
+  "implementationVersion": "ibutg@native-2026-10-05+41e4b900b4af",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sem ajuste de vestimenta)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "29,5 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite de exposição para 300 W (IBUTG máx.)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "28,2 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Nível de ação para 300 W",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "25,0 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acima do limite de exposição: atividade insalubre em grau médio (NR-15, Anexo 3) e medidas corretivas obrigatórias (NR-9)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sem ajuste de vestimenta)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite de exposição para 200 W (IBUTG máx.)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Nível de ação para 200 W",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Abaixo do nível de ação para esta taxa metabólica",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sem ajuste de vestimenta)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "27,1 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite de exposição para 250 W (IBUTG máx.)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "29,2 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Nível de ação para 250 W",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "26,1 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acima do nível de ação e abaixo do limite: medidas preventivas (água fresca, trabalho pesado nos horários mais amenos, aclimatização)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sem ajuste de vestimenta)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "29,7 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite de exposição para 360 W (IBUTG máx.)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "27,3 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Nível de ação para 360 W",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "23,9 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acima do limite de exposição ocupacional: medidas corretivas obrigatórias (NR-9). A insalubridade do Anexo 3 da NR-15 não se aplica a atividades a céu aberto sem fonte artificial de calor",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sem ajuste de vestimenta)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ajuste de vestimenta",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "+10,0 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Limite de exposição para 200 W (IBUTG máx.)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Nível de ação para 200 W",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Acima do limite de exposição: atividade insalubre em grau médio (NR-15, Anexo 3) e medidas corretivas obrigatórias (NR-9)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Calculated IBUTG (without clothing adjustment)",
+                "locale": "en",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29.5 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Exposure limit for 300 W (max. IBUTG)",
+                "locale": "en",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "28.2 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Action level for 300 W",
+                "locale": "en",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "25.0 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Above the exposure limit: unhealthy activity at a moderate level (NR-15, Annex 3) and mandatory corrective measures (NR-9)",
+            "locale": "en",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.",
+            "locale": "en",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Calculated IBUTG (without clothing adjustment)",
+                "locale": "en",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24.4 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Exposure limit for 200 W (max. IBUTG)",
+                "locale": "en",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30.3 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Action level for 200 W",
+                "locale": "en",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27.5 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Below the action level for this metabolic rate",
+            "locale": "en",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.",
+            "locale": "en",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Calculated IBUTG (without clothing adjustment)",
+                "locale": "en",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "27.1 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Exposure limit for 250 W (max. IBUTG)",
+                "locale": "en",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "29.2 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Action level for 250 W",
+                "locale": "en",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "26.1 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Above the action level and below the limit: preventive measures (cool water, heavy work during the cooler hours, acclimatization)",
+            "locale": "en",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.",
+            "locale": "en",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Calculated IBUTG (without clothing adjustment)",
+                "locale": "en",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29.7 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Exposure limit for 360 W (max. IBUTG)",
+                "locale": "en",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "27.3 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Action level for 360 W",
+                "locale": "en",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "23.9 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Above the occupational exposure limit: mandatory corrective measures (NR-9). The insalubrity provision of Annex 3 of NR-15 does not apply to outdoor activities without an artificial heat source",
+            "locale": "en",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.",
+            "locale": "en",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Calculated IBUTG (without clothing adjustment)",
+                "locale": "en",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24.4 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Clothing adjustment",
+                "locale": "en",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "+10.0 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Exposure limit for 200 W (max. IBUTG)",
+                "locale": "en",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30.3 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Action level for 200 W",
+                "locale": "en",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27.5 °C",
+                "locale": "en",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Above the exposure limit: unhealthy activity at a moderate level (NR-15, Annex 3) and mandatory corrective measures (NR-9)",
+            "locale": "en",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.",
+            "locale": "en",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sin ajuste de vestimenta)",
+                "locale": "es",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29,5 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Límite de exposición para 300 W (IBUTG máx.)",
+                "locale": "es",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "28,2 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Nivel de acción para 300 W",
+                "locale": "es",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "25,0 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Por encima del límite de exposición: actividad insalubre en grado medio (NR-15, Anexo 3) y medidas correctivas obligatorias (NR-9)",
+            "locale": "es",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.",
+            "locale": "es",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sin ajuste de vestimenta)",
+                "locale": "es",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Límite de exposición para 200 W (IBUTG máx.)",
+                "locale": "es",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Nivel de acción para 200 W",
+                "locale": "es",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Por debajo del nivel de acción para esta tasa metabólica",
+            "locale": "es",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.",
+            "locale": "es",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sin ajuste de vestimenta)",
+                "locale": "es",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "27,1 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Límite de exposición para 250 W (IBUTG máx.)",
+                "locale": "es",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "29,2 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Nivel de acción para 250 W",
+                "locale": "es",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "26,1 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Por encima del nivel de acción y por debajo del límite: medidas preventivas (agua fresca, trabajo pesado en los horarios más frescos, aclimatación)",
+            "locale": "es",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.",
+            "locale": "es",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sin ajuste de vestimenta)",
+                "locale": "es",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29,7 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Límite de exposición para 360 W (IBUTG máx.)",
+                "locale": "es",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "27,3 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Nivel de acción para 360 W",
+                "locale": "es",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "23,9 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Por encima del límite de exposición ocupacional: medidas correctivas obligatorias (NR-9). La insalubridad del Anexo 3 de la NR-15 no se aplica a actividades al aire libre sin fuente artificial de calor",
+            "locale": "es",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.",
+            "locale": "es",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculado (sin ajuste de vestimenta)",
+                "locale": "es",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ajuste de vestimenta",
+                "locale": "es",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "+10,0 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Límite de exposición para 200 W (IBUTG máx.)",
+                "locale": "es",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Nivel de acción para 200 W",
+                "locale": "es",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "es",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Por encima del límite de exposición: actividad insalubre en grado medio (NR-15, Anexo 3) y medidas correctivas obligatorias (NR-9)",
+            "locale": "es",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "La evaluación legal exige el IBUTG medio y la tasa metabólica media de la peor ventana continua de 60 minutos, medidos conforme a la NHO 06 de Fundacentro.",
+            "locale": "es",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculé (sans ajustement vestimentaire)",
+                "locale": "fr",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29,5 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite d’exposition pour 300 W (IBUTG max.)",
+                "locale": "fr",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "28,2 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Niveau d’action pour 300 W",
+                "locale": "fr",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "25,0 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Au-dessus de la limite d’exposition : activité insalubre à degré moyen (NR-15, Annexe 3) et mesures correctives obligatoires (NR-9)",
+            "locale": "fr",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "L’évaluation juridique exige l’IBUTG moyen et le taux métabolique moyen de la pire fenêtre continue de 60 minutes, mesurés conformément à la NHO 06 de Fundacentro.",
+            "locale": "fr",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculé (sans ajustement vestimentaire)",
+                "locale": "fr",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite d’exposition pour 200 W (IBUTG max.)",
+                "locale": "fr",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Niveau d’action pour 200 W",
+                "locale": "fr",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "En dessous du niveau d’action pour ce taux métabolique",
+            "locale": "fr",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "L’évaluation juridique exige l’IBUTG moyen et le taux métabolique moyen de la pire fenêtre continue de 60 minutes, mesurés conformément à la NHO 06 de Fundacentro.",
+            "locale": "fr",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculé (sans ajustement vestimentaire)",
+                "locale": "fr",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "27,1 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite d’exposition pour 250 W (IBUTG max.)",
+                "locale": "fr",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "29,2 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Niveau d’action pour 250 W",
+                "locale": "fr",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "26,1 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Au-dessus du niveau d'action et en dessous de la limite : mesures préventives (eau fraîche, travail lourd aux heures les plus fraîches, acclimatation)",
+            "locale": "fr",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "L’évaluation juridique exige l’IBUTG moyen et le taux métabolique moyen de la pire fenêtre continue de 60 minutes, mesurés conformément à la NHO 06 de Fundacentro.",
+            "locale": "fr",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculé (sans ajustement vestimentaire)",
+                "locale": "fr",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29,7 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite d’exposition pour 360 W (IBUTG max.)",
+                "locale": "fr",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "27,3 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Niveau d’action pour 360 W",
+                "locale": "fr",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "23,9 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Au-dessus de la limite d'exposition professionnelle : mesures correctives obligatoires (NR-9). L'insalubrité de l'Annexe 3 de la NR-15 ne s'applique pas aux activités en plein air sans source artificielle de chaleur",
+            "locale": "fr",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "L’évaluation juridique exige l’IBUTG moyen et le taux métabolique moyen de la pire fenêtre continue de 60 minutes, mesurés conformément à la NHO 06 de Fundacentro.",
+            "locale": "fr",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calculé (sans ajustement vestimentaire)",
+                "locale": "fr",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Ajustement vestimentaire",
+                "locale": "fr",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "+10,0 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Limite d’exposition pour 200 W (IBUTG max.)",
+                "locale": "fr",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Niveau d’action pour 200 W",
+                "locale": "fr",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "fr",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Au-dessus de la limite d’exposition : activité insalubre à degré moyen (NR-15, Annexe 3) et mesures correctives obligatoires (NR-9)",
+            "locale": "fr",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "L’évaluation juridique exige l’IBUTG moyen et le taux métabolique moyen de la pire fenêtre continue de 60 minutes, mesurés conformément à la NHO 06 de Fundacentro.",
+            "locale": "fr",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Berechneter IBUTG (ohne Kleidungskorrektur)",
+                "locale": "de",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29,5 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expositionsgrenze für 300 W (max. IBUTG)",
+                "locale": "de",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "28,2 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Maßnahmenstufe für 300 W",
+                "locale": "de",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "25,0 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Oberhalb der Expositionsgrenze: gesundheitsschädliche Tätigkeit mittleren Grades (NR-15, Anhang 3) und verpflichtende Korrekturmaßnahmen (NR-9)",
+            "locale": "de",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.",
+            "locale": "de",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Berechneter IBUTG (ohne Kleidungskorrektur)",
+                "locale": "de",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expositionsgrenze für 200 W (max. IBUTG)",
+                "locale": "de",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Maßnahmenstufe für 200 W",
+                "locale": "de",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Unterhalb der Maßnahmenstufe für diese Stoffwechselrate",
+            "locale": "de",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.",
+            "locale": "de",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Berechneter IBUTG (ohne Kleidungskorrektur)",
+                "locale": "de",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "27,1 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expositionsgrenze für 250 W (max. IBUTG)",
+                "locale": "de",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "29,2 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Maßnahmenstufe für 250 W",
+                "locale": "de",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "26,1 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Über dem Aktionsniveau und unter der Grenze: vorbeugende Maßnahmen (kühles Wasser, schwere Arbeit in den kühleren Zeiten, Akklimatisierung)",
+            "locale": "de",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.",
+            "locale": "de",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Berechneter IBUTG (ohne Kleidungskorrektur)",
+                "locale": "de",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29,7 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Expositionsgrenze für 360 W (max. IBUTG)",
+                "locale": "de",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "27,3 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Maßnahmenstufe für 360 W",
+                "locale": "de",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "23,9 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Über dem beruflichen Expositionsgrenzwert: verpflichtende Korrekturmaßnahmen (NR-9). Die Regelung zur Gesundheitsgefährdung in Anhang 3 der NR-15 gilt nicht für Tätigkeiten im Freien ohne künstliche Wärmequelle",
+            "locale": "de",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.",
+            "locale": "de",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Berechneter IBUTG (ohne Kleidungskorrektur)",
+                "locale": "de",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Kleidungsanpassung",
+                "locale": "de",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "+10,0 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Expositionsgrenze für 200 W (max. IBUTG)",
+                "locale": "de",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Maßnahmenstufe für 200 W",
+                "locale": "de",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "de",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Oberhalb der Expositionsgrenze: gesundheitsschädliche Tätigkeit mittleren Grades (NR-15, Anhang 3) und verpflichtende Korrekturmaßnahmen (NR-9)",
+            "locale": "de",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "Die rechtliche Bewertung erfordert den durchschnittlichen IBUTG und die durchschnittliche Stoffwechselrate des ungünstigsten fortlaufenden 60-Minuten-Fensters, gemessen gemäß der NHO 06 von Fundacentro.",
+            "locale": "de",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calcolato (senza correzione per l’abbigliamento)",
+                "locale": "it",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29,5 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite di esposizione per 300 W (IBUTG max.)",
+                "locale": "it",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "28,2 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Livello di azione per 300 W",
+                "locale": "it",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "25,0 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Al di sopra del limite di esposizione: attività insalubre di grado medio (NR-15, Allegato 3) e misure correttive obbligatorie (NR-9)",
+            "locale": "it",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.",
+            "locale": "it",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calcolato (senza correzione per l’abbigliamento)",
+                "locale": "it",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite di esposizione per 200 W (IBUTG max.)",
+                "locale": "it",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Livello di azione per 200 W",
+                "locale": "it",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Al di sotto del livello di azione per questo tasso metabolico",
+            "locale": "it",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.",
+            "locale": "it",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calcolato (senza correzione per l’abbigliamento)",
+                "locale": "it",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "27,1 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite di esposizione per 250 W (IBUTG max.)",
+                "locale": "it",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "29,2 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Livello di azione per 250 W",
+                "locale": "it",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "26,1 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Al di sopra del livello di azione e al di sotto del limite: misure preventive (acqua fresca, lavori pesanti negli orari più freschi, acclimatazione)",
+            "locale": "it",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.",
+            "locale": "it",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calcolato (senza correzione per l’abbigliamento)",
+                "locale": "it",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29,7 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Limite di esposizione per 360 W (IBUTG max.)",
+                "locale": "it",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "27,3 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Livello di azione per 360 W",
+                "locale": "it",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "23,9 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Al di sopra del limite di esposizione occupazionale: misure correttive obbligatorie (NR-9). L'insalubrità dell'Allegato 3 della NR-15 non si applica alle attività all'aperto senza fonte artificiale di calore",
+            "locale": "it",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.",
+            "locale": "it",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG calcolato (senza correzione per l’abbigliamento)",
+                "locale": "it",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24,4 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Aggiustamento dell'abbigliamento",
+                "locale": "it",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "+10,0 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Limite di esposizione per 200 W (IBUTG max.)",
+                "locale": "it",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30,3 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Livello di azione per 200 W",
+                "locale": "it",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27,5 °C",
+                "locale": "it",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Al di sopra del limite di esposizione: attività insalubre di grado medio (NR-15, Allegato 3) e misure correttive obbligatorie (NR-9)",
+            "locale": "it",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "La valutazione legale richiede l’IBUTG medio e il tasso metabolico medio della peggiore finestra continua di 60 minuti, misurati secondo la NHO 06 di Fundacentro.",
+            "locale": "it",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG المحسوب (من دون تعديل الملابس)",
+                "locale": "ar",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "٢٩٫٥ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "حد التعرض لـ ٣٠٠ W (الحد الأقصى لـ IBUTG)",
+                "locale": "ar",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "٢٨٫٢ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "مستوى الإجراء لـ ٣٠٠ W",
+                "locale": "ar",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "٢٥٫٠ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فوق حد التعرض: نشاط غير صحي بدرجة متوسطة (NR-15، الملحق 3) وتدابير تصحيحية إلزامية (NR-9)",
+            "locale": "ar",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "يتطلب التقييم القانوني IBUTG المتوسط ومعدل الأيض المتوسط لأسوأ نافذة متواصلة مدتها 60 دقيقة، مقاسة وفقًا لـ NHO 06 التابعة لـ Fundacentro.",
+            "locale": "ar",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG المحسوب (من دون تعديل الملابس)",
+                "locale": "ar",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "٢٤٫٤ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "حد التعرض لـ ٢٠٠ W (الحد الأقصى لـ IBUTG)",
+                "locale": "ar",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "٣٠٫٣ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "مستوى الإجراء لـ ٢٠٠ W",
+                "locale": "ar",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "٢٧٫٥ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "أقل من مستوى الإجراء لهذه المعدل الأيضي",
+            "locale": "ar",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "يتطلب التقييم القانوني IBUTG المتوسط ومعدل الأيض المتوسط لأسوأ نافذة متواصلة مدتها 60 دقيقة، مقاسة وفقًا لـ NHO 06 التابعة لـ Fundacentro.",
+            "locale": "ar",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG المحسوب (من دون تعديل الملابس)",
+                "locale": "ar",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "٢٧٫١ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "حد التعرض لـ ٢٥٠ W (الحد الأقصى لـ IBUTG)",
+                "locale": "ar",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "٢٩٫٢ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "مستوى الإجراء لـ ٢٥٠ W",
+                "locale": "ar",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "٢٦٫١ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فوق مستوى الإجراء وتحت الحد: تدابير وقائية (ماء بارد، العمل الشاق في الأوقات الأبرد، التكيف الحراري)",
+            "locale": "ar",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "يتطلب التقييم القانوني IBUTG المتوسط ومعدل الأيض المتوسط لأسوأ نافذة متواصلة مدتها 60 دقيقة، مقاسة وفقًا لـ NHO 06 التابعة لـ Fundacentro.",
+            "locale": "ar",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG المحسوب (من دون تعديل الملابس)",
+                "locale": "ar",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "٢٩٫٧ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "حد التعرض لـ ٣٦٠ W (الحد الأقصى لـ IBUTG)",
+                "locale": "ar",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "٢٧٫٣ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "مستوى الإجراء لـ ٣٦٠ W",
+                "locale": "ar",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "٢٣٫٩ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فوق حد التعرض المهني: تدابير تصحيحية إلزامية (NR-9). لا تنطبق حالة عدم الصحية الواردة في الملحق 3 من NR-15 على الأنشطة في الهواء الطلق دون مصدر حراري اصطناعي",
+            "locale": "ar",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "يتطلب التقييم القانوني IBUTG المتوسط ومعدل الأيض المتوسط لأسوأ نافذة متواصلة مدتها 60 دقيقة، مقاسة وفقًا لـ NHO 06 التابعة لـ Fundacentro.",
+            "locale": "ar",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "IBUTG المحسوب (من دون تعديل الملابس)",
+                "locale": "ar",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "٢٤٫٤ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "تعديل الملابس",
+                "locale": "ar",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "؜+١٠٫٠ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "حد التعرض لـ ٢٠٠ W (الحد الأقصى لـ IBUTG)",
+                "locale": "ar",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "٣٠٫٣ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "مستوى الإجراء لـ ٢٠٠ W",
+                "locale": "ar",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "٢٧٫٥ °C",
+                "locale": "ar",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فوق حد التعرض: نشاط غير صحي بدرجة متوسطة (NR-15، الملحق 3) وتدابير تصحيحية إلزامية (NR-9)",
+            "locale": "ar",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "يتطلب التقييم القانوني IBUTG المتوسط ومعدل الأيض المتوسط لأسوأ نافذة متواصلة مدتها 60 دقيقة، مقاسة وفقًا لـ NHO 06 التابعة لـ Fundacentro.",
+            "locale": "ar",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "计算得出的 IBUTG（未进行服装调整）",
+                "locale": "zh",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29.5 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "300 W 的暴露限值（最大 IBUTG）",
+                "locale": "zh",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "28.2 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "300 W 的行动水平",
+                "locale": "zh",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "25.0 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高于暴露限值：中度不健康作业（NR-15，附录 3）以及强制性纠正措施（NR-9）",
+            "locale": "zh",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "法律评估要求平均 IBUTG 和最差连续 60 分钟窗口的平均代谢率，并按照 Fundacentro 的 NHO 06 进行测量。",
+            "locale": "zh",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "计算得出的 IBUTG（未进行服装调整）",
+                "locale": "zh",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24.4 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "200 W 的暴露限值（最大 IBUTG）",
+                "locale": "zh",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30.3 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "200 W 的行动水平",
+                "locale": "zh",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27.5 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "低于该代谢率的行动水平",
+            "locale": "zh",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "法律评估要求平均 IBUTG 和最差连续 60 分钟窗口的平均代谢率，并按照 Fundacentro 的 NHO 06 进行测量。",
+            "locale": "zh",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "计算得出的 IBUTG（未进行服装调整）",
+                "locale": "zh",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "27.1 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "250 W 的暴露限值（最大 IBUTG）",
+                "locale": "zh",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "29.2 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "250 W 的行动水平",
+                "locale": "zh",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "26.1 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高于行动水平且低于限值：预防措施（凉水、在较凉爽时段进行重体力劳动、适应热环境）",
+            "locale": "zh",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "法律评估要求平均 IBUTG 和最差连续 60 分钟窗口的平均代谢率，并按照 Fundacentro 的 NHO 06 进行测量。",
+            "locale": "zh",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "计算得出的 IBUTG（未进行服装调整）",
+                "locale": "zh",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29.7 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "360 W 的暴露限值（最大 IBUTG）",
+                "locale": "zh",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "27.3 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "360 W 的行动水平",
+                "locale": "zh",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "23.9 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高于职业暴露限值：必须采取纠正措施（NR-9）。NR-15 附件 3 的不卫生规定不适用于没有人工热源的露天活动",
+            "locale": "zh",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "法律评估要求平均 IBUTG 和最差连续 60 分钟窗口的平均代谢率，并按照 Fundacentro 的 NHO 06 进行测量。",
+            "locale": "zh",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "计算得出的 IBUTG（未进行服装调整）",
+                "locale": "zh",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24.4 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "服装调整",
+                "locale": "zh",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "+10.0 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "200 W 的暴露限值（最大 IBUTG）",
+                "locale": "zh",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30.3 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "200 W 的行动水平",
+                "locale": "zh",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27.5 °C",
+                "locale": "zh",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "高于暴露限值：中度不健康作业（NR-15，附录 3）以及强制性纠正措施（NR-9）",
+            "locale": "zh",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "法律评估要求平均 IBUTG 和最差连续 60 分钟窗口的平均代谢率，并按照 Fundacentro 的 NHO 06 进行测量。",
+            "locale": "zh",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "算出された IBUTG（服装補正なし）",
+                "locale": "ja",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29.5 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "300 W の曝露限界（IBUTG 最大）",
+                "locale": "ja",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "28.2 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "300 W の行動レベル",
+                "locale": "ja",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "25.0 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "曝露限界を超える: 中等度の不健康作業（NR-15、付属書 3）および是正措置の義務（NR-9）",
+            "locale": "ja",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "法的評価では、Fundacentro の NHO 06 に従って測定された、最悪の連続 60 分間の平均 IBUTG と平均代謝率が必要です。",
+            "locale": "ja",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "算出された IBUTG（服装補正なし）",
+                "locale": "ja",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24.4 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "200 W の曝露限界（IBUTG 最大）",
+                "locale": "ja",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30.3 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "200 W の行動レベル",
+                "locale": "ja",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27.5 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "この代謝率では行動レベルを下回る",
+            "locale": "ja",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "法的評価では、Fundacentro の NHO 06 に従って測定された、最悪の連続 60 分間の平均 IBUTG と平均代謝率が必要です。",
+            "locale": "ja",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "算出された IBUTG（服装補正なし）",
+                "locale": "ja",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "27.1 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "250 W の曝露限界（IBUTG 最大）",
+                "locale": "ja",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "29.2 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "250 W の行動レベル",
+                "locale": "ja",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "26.1 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "行動レベルを超え、限界値を下回る：予防措置（冷たい水、涼しい時間帯での重労働、順化）",
+            "locale": "ja",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "法的評価では、Fundacentro の NHO 06 に従って測定された、最悪の連続 60 分間の平均 IBUTG と平均代謝率が必要です。",
+            "locale": "ja",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "算出された IBUTG（服装補正なし）",
+                "locale": "ja",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29.7 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "360 W の曝露限界（IBUTG 最大）",
+                "locale": "ja",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "27.3 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "360 W の行動レベル",
+                "locale": "ja",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "23.9 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "職業曝露限界を超過：是正措置が義務付けられる（NR-9）。NR-15 の附属書3の不衛生規定は、人工熱源のない屋外活動には適用されない",
+            "locale": "ja",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "法的評価では、Fundacentro の NHO 06 に従って測定された、最悪の連続 60 分間の平均 IBUTG と平均代謝率が必要です。",
+            "locale": "ja",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "算出された IBUTG（服装補正なし）",
+                "locale": "ja",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24.4 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "服装調整",
+                "locale": "ja",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "+10.0 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "200 W の曝露限界（IBUTG 最大）",
+                "locale": "ja",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30.3 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "200 W の行動レベル",
+                "locale": "ja",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27.5 °C",
+                "locale": "ja",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "曝露限界を超える: 中等度の不健康作業（NR-15、付属書 3）および是正措置の義務（NR-9）",
+            "locale": "ja",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "法的評価では、Fundacentro の NHO 06 に従って測定された、最悪の連続 60 分間の平均 IBUTG と平均代謝率が必要です。",
+            "locale": "ja",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गणना किया गया IBUTG (वस्त्र समायोजन के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29.5 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.5
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "300 W के लिए एक्सपोज़र सीमा (अधिकतम IBUTG)",
+                "locale": "hi",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "28.2 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  28.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "300 W के लिए कार्रवाई स्तर",
+                "locale": "hi",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  300
+                ]
+              },
+              "value": {
+                "text": "25.0 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  25
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "एक्सपोज़र सीमा से ऊपर: मध्यम स्तर की अस्वास्थ्यकर गतिविधि (NR-15, अनुबंध 3) और अनिवार्य सुधारात्मक उपाय (NR-9)",
+            "locale": "hi",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "कानूनी आकलन के लिए औसत IBUTG और सबसे खराब निरंतर 60-मिनट की खिड़की की औसत चयापचय दर आवश्यक है, जिसे Fundacentro की NHO 06 के अनुसार मापा जाता है।",
+            "locale": "hi",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गणना किया गया IBUTG (वस्त्र समायोजन के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24.4 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "200 W के लिए एक्सपोज़र सीमा (अधिकतम IBUTG)",
+                "locale": "hi",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30.3 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "200 W के लिए कार्रवाई स्तर",
+                "locale": "hi",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27.5 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "इस चयापचय दर के लिए कार्रवाई स्तर से नीचे",
+            "locale": "hi",
+            "template": "documented-authored-af2608542f8b15fbf1ab"
+          },
+          "note": {
+            "text": "कानूनी आकलन के लिए औसत IBUTG और सबसे खराब निरंतर 60-मिनट की खिड़की की औसत चयापचय दर आवश्यक है, जिसे Fundacentro की NHO 06 के अनुसार मापा जाता है।",
+            "locale": "hi",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गणना किया गया IBUTG (वस्त्र समायोजन के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "27.1 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.1
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "250 W के लिए एक्सपोज़र सीमा (अधिकतम IBUTG)",
+                "locale": "hi",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "29.2 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "250 W के लिए कार्रवाई स्तर",
+                "locale": "hi",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  250
+                ]
+              },
+              "value": {
+                "text": "26.1 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  26.1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "कार्रवाई स्तर से ऊपर और सीमा से नीचे: निवारक उपाय (ठंडा पानी, अधिक ठंडे समय में भारी काम, अनुकूलन)",
+            "locale": "hi",
+            "template": "documented-authored-ac47f6f5078b7bacb1b6"
+          },
+          "note": {
+            "text": "कानूनी आकलन के लिए औसत IBUTG और सबसे खराब निरंतर 60-मिनट की खिड़की की औसत चयापचय दर आवश्यक है, जिसे Fundacentro की NHO 06 के अनुसार मापा जाता है।",
+            "locale": "hi",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गणना किया गया IBUTG (वस्त्र समायोजन के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "29.7 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  29.7
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "360 W के लिए एक्सपोज़र सीमा (अधिकतम IBUTG)",
+                "locale": "hi",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "27.3 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.3
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "360 W के लिए कार्रवाई स्तर",
+                "locale": "hi",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  360
+                ]
+              },
+              "value": {
+                "text": "23.9 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  23.9
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "व्यावसायिक एक्सपोज़र सीमा से ऊपर: अनिवार्य सुधारात्मक उपाय (NR-9)। NR-15 के अनुलग्नक 3 की अस्वास्थ्यकरता बिना कृत्रिम ऊष्मा स्रोत वाली बाहरी गतिविधियों पर लागू नहीं होती",
+            "locale": "hi",
+            "template": "documented-authored-15246584e13c3b6b9805"
+          },
+          "note": {
+            "text": "कानूनी आकलन के लिए औसत IBUTG और सबसे खराब निरंतर 60-मिनट की खिड़की की औसत चयापचय दर आवश्यक है, जिसे Fundacentro की NHO 06 के अनुसार मापा जाता है।",
+            "locale": "hi",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गणना किया गया IBUTG (वस्त्र समायोजन के बिना)",
+                "locale": "hi",
+                "template": "documented-authored-c87ba6719b517e0acf64"
+              },
+              "value": {
+                "text": "24.4 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  24.4
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "वस्त्र समायोजन",
+                "locale": "hi",
+                "template": "documented-authored-2eb7177114270b0a036e"
+              },
+              "value": {
+                "text": "+10.0 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  10
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "200 W के लिए एक्सपोज़र सीमा (अधिकतम IBUTG)",
+                "locale": "hi",
+                "template": "documented-authored-32ce11f2b35b88078b60",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "30.3 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  30.3
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "200 W के लिए कार्रवाई स्तर",
+                "locale": "hi",
+                "template": "documented-authored-ab0654041ff1f9e40bc6",
+                "sourceNumbers": [
+                  200
+                ]
+              },
+              "value": {
+                "text": "27.5 °C",
+                "locale": "hi",
+                "template": "documented-authored-ba75ef8a51c65556e790",
+                "sourceNumbers": [
+                  27.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "एक्सपोज़र सीमा से ऊपर: मध्यम स्तर की अस्वास्थ्यकर गतिविधि (NR-15, अनुबंध 3) और अनिवार्य सुधारात्मक उपाय (NR-9)",
+            "locale": "hi",
+            "template": "documented-authored-59240415ee4669e313f3"
+          },
+          "note": {
+            "text": "कानूनी आकलन के लिए औसत IBUTG और सबसे खराब निरंतर 60-मिनट की खिड़की की औसत चयापचय दर आवश्यक है, जिसे Fundacentro की NHO 06 के अनुसार मापा जाता है।",
+            "locale": "hi",
+            "template": "documented-authored-2e6cbad2b1062c704778"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

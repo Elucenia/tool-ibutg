@@ -109,3 +109,73 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Above the exposure limit: unhealthy activity at a moderate level (NR-15, Annex 3) and mandatory corrective measures (NR-9)
+
+| Result details | |
+| --- | --- |
+| Calculated IBUTG (without clothing adjustment) | 29.5 °C |
+| Exposure limit for 300 W (max. IBUTG) | 28.2 °C |
+| Action level for 300 W | 25.0 °C |
+
+The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.
+
+
+### 2
+
+Below the action level for this metabolic rate
+
+| Result details | |
+| --- | --- |
+| Calculated IBUTG (without clothing adjustment) | 24.4 °C |
+| Exposure limit for 200 W (max. IBUTG) | 30.3 °C |
+| Action level for 200 W | 27.5 °C |
+
+The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.
+
+
+### 3
+
+Above the action level and below the limit: preventive measures (cool water, heavy work during the cooler hours, acclimatization)
+
+| Result details | |
+| --- | --- |
+| Calculated IBUTG (without clothing adjustment) | 27.1 °C |
+| Exposure limit for 250 W (max. IBUTG) | 29.2 °C |
+| Action level for 250 W | 26.1 °C |
+
+The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.
+
+
+### 4
+
+Above the occupational exposure limit: mandatory corrective measures (NR-9). The insalubrity provision of Annex 3 of NR-15 does not apply to outdoor activities without an artificial heat source
+
+| Result details | |
+| --- | --- |
+| Calculated IBUTG (without clothing adjustment) | 29.7 °C |
+| Exposure limit for 360 W (max. IBUTG) | 27.3 °C |
+| Action level for 360 W | 23.9 °C |
+
+The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.
+
+
+### 5
+
+Above the exposure limit: unhealthy activity at a moderate level (NR-15, Annex 3) and mandatory corrective measures (NR-9)
+
+| Result details | |
+| --- | --- |
+| Calculated IBUTG (without clothing adjustment) | 24.4 °C |
+| Clothing adjustment | +10.0 °C |
+| Exposure limit for 200 W (max. IBUTG) | 30.3 °C |
+| Action level for 200 W | 27.5 °C |
+
+The legal assessment requires the average IBUTG and the average metabolic rate of the worst continuous 60-minute window, measured according to Fundacentro's NHO 06.
+

@@ -1,0 +1,447 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "ibutg",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "ac7040d02978a63787305cc12986c0386c6e0f04",
+    "oldEngineSha256": "f224aedece8f61a8c753a39409e06007a4c6100f472c88314198483af69d45b2",
+    "currentEngineSha256": "41e4b900b4af16a0105abbf9e5de358d6262f8cff641df9cc64669332884e347"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Fechado, tbn 25, tg 40, 300 W: IBUTG 29,5 °C &gt; limite 28,2 °C (insalubre)",
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 25,
+        "tg": 40,
+        "m": 300,
+        "roupa": "0",
+        "capuz": false
+      },
+      "publicOutput": {
+        "id": "ibutg",
+        "main": [
+          "29,5",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 29.5,
+          "base": 29.5,
+          "lim": 28.2,
+          "acao": 25
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ibutg": 29.5,
+          "lim": 28.2,
+          "acao": 25
+        },
+        "level": "high",
+        "verdict": "insalubre"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "29,5",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "level": "high",
+        "verdict": "Acima do limite de exposição: atividade insalubre em grau médio (NR-15, Anexo 3) e medidas corretivas obrigatórias (NR-9)",
+        "rows": [
+          [
+            "IBUTG calculado (sem ajuste de vestimenta)",
+            "29,5 °C"
+          ],
+          [
+            "Limite de exposição para 300 W (IBUTG máx.)",
+            "28,2 °C"
+          ],
+          [
+            "Nível de ação para 300 W",
+            "25,0 °C"
+          ]
+        ],
+        "note": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+        "raw": {
+          "ibutg": 29.5,
+          "base": 29.5,
+          "lim": 28.2,
+          "acao": 25
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Fechado, tbn 22, tg 30, 200 W: IBUTG 24,4 °C, abaixo do nível de ação (27,5 °C)",
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 22,
+        "tg": 30,
+        "m": 200,
+        "roupa": "0",
+        "capuz": false
+      },
+      "publicOutput": {
+        "id": "ibutg",
+        "main": [
+          "24,4",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 24.4,
+          "base": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ibutg": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "24,4",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "level": "low",
+        "verdict": "Abaixo do nível de ação para esta taxa metabólica",
+        "rows": [
+          [
+            "IBUTG calculado (sem ajuste de vestimenta)",
+            "24,4 °C"
+          ],
+          [
+            "Limite de exposição para 200 W (IBUTG máx.)",
+            "30,3 °C"
+          ],
+          [
+            "Nível de ação para 200 W",
+            "27,5 °C"
+          ]
+        ],
+        "note": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+        "raw": {
+          "ibutg": 24.4,
+          "base": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Fechado, tbn 25, tg 32, 250 W: IBUTG 27,1 °C, entre o nível de ação (26,1) e o limite (29,2)",
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 25,
+        "tg": 32,
+        "m": 250,
+        "roupa": "0",
+        "capuz": false
+      },
+      "publicOutput": {
+        "id": "ibutg",
+        "main": [
+          "27,1",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 27.1,
+          "base": 27.1,
+          "lim": 29.2,
+          "acao": 26.1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ibutg": 27.1,
+          "lim": 29.2,
+          "acao": 26.1
+        },
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "27,1",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "level": "mid",
+        "verdict": "Acima do nível de ação e abaixo do limite: medidas preventivas (água fresca, trabalho pesado nos horários mais amenos, aclimatização)",
+        "rows": [
+          [
+            "IBUTG calculado (sem ajuste de vestimenta)",
+            "27,1 °C"
+          ],
+          [
+            "Limite de exposição para 250 W (IBUTG máx.)",
+            "29,2 °C"
+          ],
+          [
+            "Nível de ação para 250 W",
+            "26,1 °C"
+          ]
+        ],
+        "note": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+        "raw": {
+          "ibutg": 27.1,
+          "base": 27.1,
+          "lim": 29.2,
+          "acao": 26.1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Céu aberto com sol, tbn 25, tbs 32, tg 45, 360 W: IBUTG 29,7 °C &gt; 27,3 °C, sem insalubridade pelo Anexo 3",
+      "input": {
+        "amb": "aberto",
+        "solar": "1",
+        "tbn": 25,
+        "tbs": 32,
+        "tg": 45,
+        "m": 360,
+        "roupa": "0",
+        "capuz": false
+      },
+      "publicOutput": {
+        "id": "ibutg",
+        "main": [
+          "29,7",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "raw": {
+          "ibutg": 29.7,
+          "base": 29.7,
+          "lim": 27.3,
+          "acao": 23.9
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ibutg": 29.7,
+          "lim": 27.3
+        },
+        "level": "high",
+        "verdict": "não se aplica"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "29,7",
+          "°C"
+        ],
+        "label": "IBUTG",
+        "level": "high",
+        "verdict": "Acima do limite de exposição ocupacional: medidas corretivas obrigatórias (NR-9). A insalubridade do Anexo 3 da NR-15 não se aplica a atividades a céu aberto sem fonte artificial de calor",
+        "rows": [
+          [
+            "IBUTG calculado (sem ajuste de vestimenta)",
+            "29,7 °C"
+          ],
+          [
+            "Limite de exposição para 360 W (IBUTG máx.)",
+            "27,3 °C"
+          ],
+          [
+            "Nível de ação para 360 W",
+            "23,9 °C"
+          ]
+        ],
+        "note": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+        "raw": {
+          "ibutg": 29.7,
+          "base": 29.7,
+          "lim": 27.3,
+          "acao": 23.9
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Fechado, tbn 22, tg 30, 200 W, macacão impermeável (+10): 34,4 °C",
+      "input": {
+        "amb": "fechado",
+        "solar": "0",
+        "tbn": 22,
+        "tg": 30,
+        "m": 200,
+        "roupa": "10",
+        "capuz": false
+      },
+      "publicOutput": {
+        "id": "ibutg",
+        "main": [
+          "34,4",
+          "°C"
+        ],
+        "label": "IBUTG ajustado pela vestimenta",
+        "raw": {
+          "ibutg": 34.4,
+          "base": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ibutg": 34.4,
+          "base": 24.4
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "34,4",
+          "°C"
+        ],
+        "label": "IBUTG ajustado pela vestimenta",
+        "level": "high",
+        "verdict": "Acima do limite de exposição: atividade insalubre em grau médio (NR-15, Anexo 3) e medidas corretivas obrigatórias (NR-9)",
+        "rows": [
+          [
+            "IBUTG calculado (sem ajuste de vestimenta)",
+            "24,4 °C"
+          ],
+          [
+            "Ajuste de vestimenta",
+            "+10,0 °C"
+          ],
+          [
+            "Limite de exposição para 200 W (IBUTG máx.)",
+            "30,3 °C"
+          ],
+          [
+            "Nível de ação para 200 W",
+            "27,5 °C"
+          ]
+        ],
+        "note": "A avaliação legal exige o IBUTG médio e a taxa metabólica média da pior janela de 60 minutos corridos, medidos conforme a NHO 06 da Fundacentro.",
+        "raw": {
+          "ibutg": 34.4,
+          "base": 24.4,
+          "lim": 30.3,
+          "acao": 27.5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 5,
+      "name": "Carga solar sem tbs: erro",
+      "input": {
+        "amb": "aberto",
+        "solar": "1",
+        "tbn": 25,
+        "tg": 45,
+        "m": 300,
+        "roupa": "0",
+        "capuz": false
+      },
+      "publicOutput": {
+        "error": "Com carga solar direta, informe também a temperatura de bulbo seco (tbs).",
+        "code": "FORMULA_DOMAIN"
+      },
+      "sourceExpected": {
+        "error": true
+      },
+      "state": "existing-rejection"
+    }
+  ]
+}
